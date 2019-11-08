@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь](https://up.htmlacademy.ru/adaptive/18/user/1182509).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик](https://htmlacademy.ru/profile/id17217).
 
 ---
 
