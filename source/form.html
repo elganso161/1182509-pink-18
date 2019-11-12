@@ -35,59 +35,90 @@
       <section class="form__user">
         <h2 class="visually-hidden">Форма пользователя</h2>
         <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <form action="">
-          <div>
-            <label for="">Фамилия:</label>
-            <input type="text" placeholder="Укажите фамилию *">
-            <label for="">Имя:</label>
-            <input type="text" placeholder="Введите ваше имя *">
-            <label for="">Отчество:</label>
-            <input type="text" placeholder="Ну и отчество тоже">
-          </div>
-          <div>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <section class="full-name">
+            <h2 class="visually-hidden">Ф.И.О.</h2>
+            <div>
+              <label for="surname">Фамилия:</label>
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div>
+              <label for="name">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            </div>
+            <div>
+              <label for="patronymic">Отчество:</label>
+              <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
+          </section>
+          <section class="checkboxes">
             <h3 class="title__checkbox">Ваши безбашенные
               достижения в путешествии</h3>
-              <input type="checkbox">
-              <label for="">Сделал селфи с акулой</label>
-              <input type="checkbox">
-              <label for="">Обгорел на пляже</label>
-              <input type="checkbox">
-              <label for="">Видел Чака Норриса</label>
-              <input type="checkbox">
-              <label for="">Накупил сувениров</label>
-              <input type="checkbox">
-              <label for="">Удержал башню</label>
-              <input type="checkbox">
-              <label for="">Разгромил отель</label>
-            <div>
-              <label for="">Номер телефона</label>
-              <input type="tel" placeholder="Номер, пожалуйста">
-              <label for="">адрес почты</label>
-              <input type="email" placeholder="Введите почту *">
-            </div>
-          </div>
-          <div>
+              <div>
+                <input name="checkbox-1" id="checkbox-1" checked type="checkbox">
+                <label for="checkbox-1">Сделал селфи с акулой</label>
+              </div>
+              <div>
+                <input name="checkbox-2" id="checkbox-2" checked type="checkbox">
+                <label for="checkbox-2">Обгорел на пляже</label>
+              </div>
+              <div>
+                <input name="checkbox-3" id="checkbox-3" type="checkbox">
+                <label for="checkbox-3">Видел Чака Норриса</label>
+              </div>
+              <div>
+                <input name="checkbox-4" id="checkbox-4" type="checkbox">
+                <label for="checkbox-4">Накупил сувениров</label>
+              </div>
+              <div>
+                <input name="checkbox-5" id="checkbox-5" checked type="checkbox">
+                <label for="checkbox-5">Удержал башню</label>
+              </div>
+              <div>
+                <input name="checkbox-6" id="checkbox-6" type="checkbox">
+                <label for="checkbox-6">Разгромил отель</label>
+              </div>
+            </section>
+            <section class="user-contacts">
+              <h2 class="visually-hidden">Контакты пользователя</h2>
+              <div>
+                <label for="number">Номер телефона</label>
+                <input type="tel" name="number" id="number" placeholder="Номер, пожалуйста">
+              </div>
+              <div>
+                <label for="mail">адрес почты</label>
+                <input type="email" name="mail" id="mail" placeholder="Введите почту *">
+              </div>
+            </section>
+            <section class="radio">
             <p>С каким приложением
                 путешествовали?</p>
-                <input type="radio">
-                <label for="">Pink для iOS</label>
-                <input type="radio">
-                <label for="">Pink на Android</label>
-                <input type="radio">
-                <label for="">Windows Phone</label>
-          </div>
-          <div>
-            <label for="">Опишите свои эмоции</label>
-            <input type="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
-          </div>
-          <label for="">Отправить форму</label>
-          <input type="submit">
-        </form>
-        <small class="stats__legend stats__legend--top">
-            <sup>*</sup> — обязательные поля
-          </small>
-      </section>
-
+                <div>
+                  <input type="radio" name="ios" id="ios" checked>
+                  <label for="ios">Pink для iOS</label>
+                </div>
+                <div>
+                  <input type="radio" name="android" id="android">
+                  <label for="android">Pink на Android</label>
+                </div>
+                <div>
+                  <input type="radio" name="windows" id="windows">
+                  <label for="windows">Windows Phone</label>
+                </div>
+            </section>
+              <section class="comment">
+                <h2 class="visually-hidden">Комментраий пользователя</h2>
+                <div>
+                  <label for="text">Опишите свои эмоции</label>
+                  <input type="text" name="text" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
+                </div>
+                <input type="submit">
+              </form>
+              <small class="stats__legend stats__legend--top">
+                  <sup>*</sup> — обязательные поля
+                </small>
+              </section>
+            </section>
 
       <footer class="footer">
           <a href="index.html"><img class="footer-logo" src="https://via.placeholder.com/147x40" alt="Логотип"></a>
