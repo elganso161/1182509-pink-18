@@ -1,0 +1,36 @@
+.gallery {
+  background: url("..//img/bg-back-mobile@1x.jpg") no-repeat;
+}
+
+.gallery__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: $white;
+}
+
+.gallery__sub-title {
+  font-size: 14px;
+  line-height: 30px;
+  color: $midnight;
+}
+
+.gallery-item__user-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: $midnight;
+}
+
+.gallery-item__text {
+  font-size: 14px;
+  color: $midnight;
+}
+
+.gallery-item__like {
+  font-size: 12px;
+  color: $cerise;
+  text-transform: uppercase;
+  border: none;
+  list-style: none;
+  background: none;
+  cursor: pointer;
+}

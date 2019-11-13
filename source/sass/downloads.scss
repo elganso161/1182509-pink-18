@@ -1,0 +1,33 @@
+.downloads {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+}
+
+.downloads-icon__list {
+  list-style: none;
+}
+
+.downloads__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: $white;
+}
+
+.downloads__link {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  border: 3px solid $white;
+  padding: 20px 35px;
+  border-radius: 50px;
+}
+
+.downloads__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: $white;
+  
+}
+
+
+
