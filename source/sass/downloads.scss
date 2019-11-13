@@ -1,5 +1,6 @@
 .downloads {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  height: 395px;
 }
 
 .downloads-icon__list {
@@ -10,6 +11,9 @@
   font-size: 24px;
   font-weight: 300;
   color: $white;
+  padding: 30px 0;
+  width: 225px;
+  text-align: center;
 }
 
 .downloads__link {
@@ -26,7 +30,7 @@
   font-size: 14px;
   font-weight: 300;
   color: $white;
-  
+
 }
 
 
