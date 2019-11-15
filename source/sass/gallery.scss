@@ -1,5 +1,6 @@
-.gallery {
+.gallery__bg {
   background: url("..//img/bg-back-mobile@1x.jpg") no-repeat;
+  height: 500px;
 }
 
 .gallery__title {
@@ -12,6 +13,10 @@
   font-size: 14px;
   line-height: 30px;
   color: $midnight;
+}
+
+.gallery-item {
+  list-style: none;
 }
 
 .gallery-item__user-name {

@@ -1,0 +1,33 @@
+.tools {
+  display: flex;
+  align-items: center;
+
+}
+
+.crop {
+  border: none;
+  background: url("..//img/icon-editor-crop.svg");
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.active {
+  background: url("..//img/icon-editor-crop-active.svg");
+}
+
+.fill {
+  border: none;
+  background: url("..//img/icon-editor-fill.svg")center no-repeat;
+  width: 48px;
+  height: 43px;
+  cursor: pointer;
+}
+
+.contrast {
+  border: none;
+  background: url("..//img/icon-editor-contrast.svg")center no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
