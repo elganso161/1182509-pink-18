@@ -1,8 +1,14 @@
+.checkboxes {
+  display: block;
+  text-align: left;
+}
+
 .checkboxes__title {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $cerise;
+  text-align: center;
 }
 
 .checkboxes__text {

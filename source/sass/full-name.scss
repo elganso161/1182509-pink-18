@@ -1,0 +1,19 @@
+.full-name {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.full-name__name {
+  font-size: 14px;
+  color: $cerise;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.full-name__size {
+  width: 280px;
+  height: 59px;
+}
+
+

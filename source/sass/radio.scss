@@ -1,8 +1,13 @@
+.radio {
+  text-align: left;
+}
+
 .radio__title {
   font-size: 14px;
   color: $cerise;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .radio__text {
