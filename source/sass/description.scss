@@ -2,10 +2,16 @@
   font-size: 24px;
   font-weight: 300;
   color: $midnight;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .description__list {
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -18,4 +24,10 @@
 .description__text {
   font-size: 14px;
   color: $midnight;
+}
+
+
+.description__image {
+  margin: 0 auto;
+  text-align: center;
 }

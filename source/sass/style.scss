@@ -1,33 +1,23 @@
-
 @import "variables";
 @import "page-header";
 @import "downloads";
 @import "main-nav";
 @import "description";
-@import "site-list";
 @import "gallery";
-
-
-
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  line-height: 24px;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
+@import "fonts";
+@import "global";
+@import "reviews";
+@import "price";
+@import "contacts";
+@import "filters";
+@import "tools";
+@import "footer";
+@import "form";
+@import "checkboxes";
+@import "user-contacts";
+@import "radio";
+@import "comment";
+@import "visually-hidden";
+@import "page-main";
+@import "main-title";
+@import "full-name";

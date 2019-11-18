@@ -1,17 +1,32 @@
 .gallery {
-  background: url("..//img/bg-back-mobile@1x.jpg") no-repeat;
+  text-align: center;
+}
+
+.gallery__bg {
+  background: url("..//img/bg-back-mobile@1x.jpg") center no-repeat;
+  height: 240px;
+  margin: 0 auto;
 }
 
 .gallery__title {
   font-size: 24px;
   font-weight: 300;
   color: $white;
+  margin: 0 auto;
 }
 
 .gallery__sub-title {
   font-size: 14px;
   line-height: 30px;
   color: $midnight;
+}
+
+.gallery__list {
+  padding: 0;
+}
+
+.gallery-item {
+  list-style: none;
 }
 
 .gallery-item__user-name {
@@ -34,3 +49,21 @@
   background: none;
   cursor: pointer;
 }
+
+.gallery-item__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-item__image.first {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery-item__bg {
+  margin: 0 auto;
+  width: 280px;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
