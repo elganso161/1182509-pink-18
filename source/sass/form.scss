@@ -1,3 +1,8 @@
+.form {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .form__bg {
   background: url("..//img/bg-back-mobile@1x.jpg") no-repeat;
   height: 170px;
@@ -7,6 +12,7 @@
   font-size: 24px;
   font-weight: 300;
   color: $white;
+  margin: 0 auto;
 }
 
 .form__title-text {
