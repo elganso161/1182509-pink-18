@@ -6,6 +6,15 @@
   padding-top: 30px;
 }
 
+@media (min-width: 660px) {
+  .downloads {
+    background: none;
+    margin-top: 150px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
 
 .downloads-icon__list {
   list-style: none;
@@ -39,7 +48,6 @@
   align-items: center;
   padding: 0;
 }
-
 
 
 

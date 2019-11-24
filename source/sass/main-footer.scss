@@ -1,0 +1,16 @@
+.main-footer {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .main-footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

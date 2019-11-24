@@ -1,3 +1,111 @@
+.description {
+  height: 1000px;
+}
+
+@media (min-width: 660px) {
+  .description {
+    height: 725px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description {
+    height: 933px;
+  }
+}
+
+
+.descriotion__title {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 600px;
+    left: 80px;
+    z-index: 1;
+    background: url("..//img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: 157px 320px;
+    width: 157px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 660px) {
+  .descriotion__title {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 100px;
+      left: -150px;
+      z-index: 1;
+      background: url("..//img/iphone-screen-3-tablet@1x.png") no-repeat;
+
+      width: 268px;
+      height: 481px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .descriotion__title {
+    position: relative;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .item__phone-1 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -300px;
+      left: 0;
+      z-index: 1;
+      background: url("..//img/iphone-screen-1-desktop@1x.png") no-repeat;
+      width: 253px;
+      height: 304px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .item__phone-2 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -300px;
+      left: 0;
+      z-index: 1;
+      background: url("..//img/iphone-screen-2-desktop@1x.png") no-repeat;
+      width: 253px;
+      height: 304px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .item__phone-3 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -300px;
+      left: 0;
+      z-index: 1;
+      background: url("..//img/iphone-screen-3-desktop@1x.png") no-repeat;
+      width: 253px;
+      height: 304px;
+    }
+  }
+}
+
+
+
 .descriotion__title, .description__sub-title {
   font-size: 24px;
   font-weight: 300;
@@ -14,6 +122,21 @@
   text-align: center;
 }
 
+@media (min-width: 660px) {
+  .description__list {
+    margin-left: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 500px;
+  }
+}
+
 
 .description-item__title {
   font-size: 18px;
@@ -27,7 +150,23 @@
 }
 
 
-.description__image {
-  margin: 0 auto;
-  text-align: center;
+// .description__image {
+//   margin: 0 auto;
+//   text-align: center;
+// }
+
+.description__item {
+  text-align: left;
+  width: 320px;
+  height: 120px;
+}
+
+
+@media (min-width:660px) {
+  .description__table {
+    display: flex;
+  }
+  .description__list {
+    order: 1;
+  }
 }

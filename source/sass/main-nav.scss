@@ -17,3 +17,15 @@
   border-bottom: 1px solid $black;
 }
 
+
+@media (min-width: 1200px) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 630px;
+    flex-wrap: wrap;
+  }
+  .main-nav__item {
+    border: none;
+  }
+}

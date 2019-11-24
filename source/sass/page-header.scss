@@ -1,8 +1,33 @@
 .page-header {
   background: rgba(29, 38, 49, 30%);
   text-align: center;
-  height: 333px;
+  min-height: 325px;
 }
+
+
+@media (min-width: 660px){
+  .page-header {
+    min-height: 365px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    min-height: 110px;
+    justify-content: space-between;
+    background-color: rgba(17, 22, 29, 0.3);
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+}
+
 
 .page-header__header {
   display: flex;
@@ -11,10 +36,33 @@
   border-bottom: 1px solid $black;
 }
 
+@media (min-width: 660px){
+  .page-header__header {
+    min-height: 109px;
+  }
+}
+
+@media (min-width: 1200px){
+  .page-header__header {
+    min-height: 110px;
+
+  }
+}
+
+
+
 .page-header__logo-image {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+// @media (min-width: 660px) {
+//   .page-header__logo-image {
+//     background-image: url("..//img/logo-pink-white-tablet.svg");
+//     width: 150px;
+//     height: 40px;
+//   }
+// }
 
 
 
