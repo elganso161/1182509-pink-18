@@ -15,7 +15,7 @@
 }
 
 
-.descriotion__title {
+.description__title {
   position: relative;
   &::before {
     position: absolute;
@@ -31,7 +31,7 @@
 }
 
 @media (min-width: 660px) {
-  .descriotion__title {
+  .description__title {
     position: relative;
     &::before {
       position: absolute;
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 1200px) {
-  .descriotion__title {
+  .description__title {
     position: relative;
     &::before {
       display: none;
@@ -106,7 +106,7 @@
 
 
 
-.descriotion__title, .description__sub-title {
+.description__title, .description__sub-title {
   font-size: 24px;
   font-weight: 300;
   color: $midnight;
