@@ -5,18 +5,6 @@ body {
   min-width: 320px;
 }
 
-@media (min-width: 660px) {
-  body {
-    min-width: 660px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    min-width: 1200px;
-  }
-}
-
 html {
   box-sizing: border-box;
 }
@@ -27,5 +15,24 @@ html {
 }
 
 
+// TABLE min-width: 660px//////////////////////////////////////////////////////////
+
+@media (min-width: 660px) {
+  body {
+    min-width: 660px;
+  }
 
 
+}// min-width: 660px
+
+
+
+// DESCTOP min-width: 1200px///////////////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+
+
+}// min-width: 1200px

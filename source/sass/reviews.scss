@@ -18,3 +18,42 @@
   font-size: 14px;
   color: $midnight;
 }
+
+.reviews__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.reviews__prof {
+  display: none;
+}
+
+// TABLET min-width: 660px///////////////////////////////////////////////
+
+
+
+@media (min-width: 660px) {
+
+  .reviews__item {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .reviews__name {
+  order: 1;
+  }
+
+  .reviews__prof {
+    display: block;
+    order: 2;
+  }
+
+
+  .reviews__text {
+    width: 620px;
+  }
+
+
+}// min-width: 660px

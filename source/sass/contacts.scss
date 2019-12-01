@@ -1,18 +1,44 @@
+// MOBILE
+
 .contacts {
   text-align: center;
 }
 
-.contacts__text {
+.contacts__text-title {
   font-size: 24px;
   font-weight: 300;
   color: $midnight;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: url("..//img/bg-map-mobile@1x.png")center no-repeat;
+    width: 100%;
+    height: 645px;
+  }
 }
 
 .contacts__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: -72px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 445px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  }
 }
+
 
 .contacts__title {
   font-size: 18px;
@@ -24,7 +50,97 @@
   text-decoration: none;
 }
 
-.contact__text {
+.contacts__text {
   font-size: 24px;
   color: $cerise;
+}
+
+// TABLE min-width:660px/////////////////////////////////////////////////////////
+
+
+@media(min-width: 660px) {
+
+  .contacts {
+    height: 780px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 215px;
+    margin: 0 auto;
+  }
+  .contacts__item:first-child{
+  width: 50%;
+  }
+
+  .contacts__item:nth-child(2){
+  width: 50%;
+  }
+
+  .contacts__text-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: $midnight;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: -2;
+      background: url("..//img/bg-map-tablet@1x.jpg")center no-repeat;
+      width: 100%;
+      height: 848px;
+    }
+  }
+
+
+  .contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #fff;
+      top: -72px;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 475px;
+      clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    }
+  }
+} //*min-width: 660px
+
+
+
+
+// DESCTOP min-width: 1200px//////////////////////////////////////////////////
+
+
+@media (min-width: 1200px) {
+.contacts {
+  height: 870px;
+}
+
+  .contacts__text-title {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: -2;
+      background: url("..//img/bg-map-desktop@1x.jpg")center no-repeat;
+      background-size: 1200px 976px;
+      width: 100%;
+      height: 976px;
+    }
+ }
 }
