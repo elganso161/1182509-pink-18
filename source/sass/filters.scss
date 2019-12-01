@@ -8,3 +8,16 @@
   line-height: 30px;
   color: $midnight;
 }
+
+.filtes__form {
+  margin: 0 auto;
+}
+
+// TABLET min-width: 660px //////////////////////////////////////////
+
+
+@media (min-width: 660px) {
+  .filtes__form {
+    display: flex;
+  }
+}

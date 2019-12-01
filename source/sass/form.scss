@@ -11,6 +11,7 @@
   margin: 0 auto;
 }
 
+
 .form__title {
   font-size: 24px;
   font-weight: 300;
@@ -30,3 +31,97 @@
   color: $midnight;
 }
 
+// TABLET min-width: 660px /////////////////////////////////////////////
+
+@media (min-width: 660px) {
+  .form__bg {
+    background: url("..//img/bg-back-tablet@1x.jpg")center no-repeat;
+    background-size: 1200px 729px;
+    height: 440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .checkboxes__title {
+    display: none;
+  }
+
+  .radio__title {
+    display: none;
+  }
+
+  .form__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .full-name {
+    order: 1;
+  }
+
+  .radio {
+    order: 2;
+  }
+
+  .user-contacts {
+    order: 3;
+  }
+
+  .checkboxes {
+    order: 4;
+  }
+
+  .comment {
+    order: 5;
+  }
+
+}// min-width: 660px
+
+// DESCTOP min-width: 1200px /////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  .form__bg {
+    background: url("..//img/bg-back-tablet@1x.jpg")center no-repeat;
+    background-size: 2560px 853px;
+    height: 395px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+  }
+
+  .full-name {
+    width: 470px;
+    margin: 0;
+  }
+
+  .radio {
+    width: 470px;
+
+  }
+
+
+  .user-contacts {
+    width: 940px;
+  }
+
+  .checkboxes {
+    width: 940px;
+  }
+
+  .comment {
+    width: 940px;
+  }
+
+  .form__title-text {
+    width: 765px;
+    margin: 0 auto;
+  }
+
+
+}// min-width: 1200px

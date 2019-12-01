@@ -10,6 +10,7 @@
   text-transform: uppercase;
 }
 
+
 .main-nav__item {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -17,3 +18,35 @@
   border-bottom: 1px solid $black;
 }
 
+
+
+//* TABLE min-width: 660px/////////////////////////////////////////////////
+
+
+
+
+//* DESCTOP min-width: 1200px/////////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  .main-nav__link {
+    text-decoration: none;
+    color: $white;
+    text-transform: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 630px;
+    flex-wrap: wrap;
+  }
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav {
+    width: 630px;
+  }
+
+
+}//*min-width: 1200px

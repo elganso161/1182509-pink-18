@@ -14,3 +14,25 @@ html {
   box-sizing: border-box;
 }
 
+
+// TABLE min-width: 660px//////////////////////////////////////////////////////////
+
+@media (min-width: 660px) {
+  body {
+    min-width: 660px;
+  }
+
+
+}// min-width: 660px
+
+
+
+// DESCTOP min-width: 1200px///////////////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+
+
+}// min-width: 1200px
