@@ -1,5 +1,3 @@
-// MOBILE
-
 .contacts {
   text-align: center;
 }
@@ -8,35 +6,15 @@
   font-size: 24px;
   font-weight: 300;
   color: $midnight;
-  position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: -2;
-    background: url("..//img/bg-map-mobile@1x.png")center no-repeat;
-    width: 100%;
-    height: 645px;
-  }
 }
+
+
 
 .contacts__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: #fff;
-    top: -72px;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 445px;
-    clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
-  }
+
 }
 
 
@@ -53,6 +31,22 @@
 .contacts__text {
   font-size: 24px;
   color: $cerise;
+}
+
+.contacts__map {
+  width: 100%;
+  // position: relative;
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background-color: #000;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 10;
+  //   width: 100%;
+  //   height: 445px;
+  //   clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  // }
 }
 
 // TABLE min-width:660px/////////////////////////////////////////////////////////
@@ -85,17 +79,26 @@
     font-size: 24px;
     font-weight: 300;
     color: $midnight;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      z-index: -2;
-      background: url("..//img/bg-map-tablet@1x.jpg")center no-repeat;
-      width: 100%;
-      height: 848px;
-    }
+  }
+
+
+
+  .contacts__map {
+    background: url("..//img/bg-map-tablet@1x.jpg")bottom no-repeat;
+    background-size: 700px 848px;
+    width: 100%;
+    // height: 780px;
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   background-color: #fff;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: 2;
+    //   width: 100%;
+    //   height: 475px;
+    //   clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    // }
   }
 
 
@@ -103,18 +106,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: #fff;
-      top: -72px;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 475px;
-      clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
-    }
+
   }
 } //*min-width: 660px
 
@@ -129,18 +121,35 @@
   height: 870px;
 }
 
-  .contacts__text-title {
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      z-index: -2;
-      background: url("..//img/bg-map-desktop@1x.jpg")center no-repeat;
-      background-size: 1200px 976px;
-      width: 100%;
-      height: 976px;
-    }
- }
+//   .contacts__text-title {
+//     position: relative;
+//     &::before {
+//       position: absolute;
+//       content: "";
+//       top: 0;
+//       left: 0;
+//       z-index: -2;
+//       background: url("..//img/bg-map-desktop@1x.jpg")center no-repeat;
+//       background-size: 1200px 976px;
+//       width: 100%;
+//       height: 976px;
+//     }
+//  }
+
+ .contacts__map {
+  background: url("..//img/bg-map-desktop@1x.jpg")bottom no-repeat;
+  background-size: 1200px 976px;
+  width: 100%;
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background-color: #fff;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 2;
+  //   width: 100%;
+  //   height: 475px;
+  //   clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  // }
+}
 }

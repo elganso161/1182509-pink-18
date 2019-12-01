@@ -113,13 +113,26 @@
 @media (min-width: 1200px) {
   .description {
     height: 933px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .description__title {
     position: relative;
+    width: 820px;
+    margin: 0 auto;
     &::before {
       display: none;
     }
+  }
+
+  .description__sub-title {
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  .description__item {
+    width: 33%;
   }
 
   .item__phone-1 {
