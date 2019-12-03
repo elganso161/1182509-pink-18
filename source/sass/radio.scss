@@ -15,3 +15,31 @@
   color: $midnight;
   line-height: 30px;
 }
+
+
+// TABLET min-width: 660px /////////////////////////////////////////////
+
+@media (min-width: 660px) {
+
+  .radio__title {
+    display: none;
+  }
+
+  .radio {
+    order: 2;
+  }
+
+
+}//min-width: 660px
+
+
+// DESCTOP min-width: 1200px /////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  
+  .radio {
+    width: 470px;
+  }
+
+
+}//min-width: 1200px

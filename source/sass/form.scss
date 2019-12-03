@@ -57,13 +57,11 @@ fieldset {
     width: 495px;
   }
 
-
   fieldset {
     border: 2px solid #e5e5e5;
     font-size: 15px;
     border-radius: 3px;
   }
-
 
   .checkboxes__legend,
   .radio__legend,
@@ -74,22 +72,10 @@ fieldset {
     text-align: center;
   }
 
-  .comment__text {
-    display: none;
-  }
-
   .form__title {
     font-size: 50px;
     line-height: 50px;
     width: 490px;
-  }
-
-  .checkboxes__title {
-    display: none;
-  }
-
-  .radio__title {
-    display: none;
   }
 
   .form__items {
@@ -98,38 +84,6 @@ fieldset {
     flex-direction: column;
   }
 
-  .full-name {
-    width: 620px;
-    order: 1;
-  }
-
-  .full-name__field {
-    margin: 0 auto;
-  }
-
-
-
-  .radio {
-    order: 2;
-  }
-
-  .user-contacts {
-    order: 3;
-  }
-
-  .checkboxes {
-    order: 4;
-  }
-
-  .comment {
-    order: 5;
-  }
-
-
-  .full-name__field {
-    display: flex;
-    height: 65px;
-  }
 
 }// min-width: 660px
 
@@ -158,28 +112,6 @@ fieldset {
     flex-direction: inherit;
   }
 
-  .full-name {
-    width: 470px;
-    margin: 0 auto;
-  }
-
-  .radio {
-    width: 470px;
-
-  }
-
-
-  .user-contacts {
-    width: 940px;
-  }
-
-  .checkboxes {
-    width: 940px;
-  }
-
-  .comment {
-    width: 940px;
-  }
 
   .form__title-text {
     width: 765px;
