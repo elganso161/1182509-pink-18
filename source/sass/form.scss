@@ -6,8 +6,8 @@
 
 .form__bg {
   background: url("..//img/bg-back-mobile@1x.jpg") no-repeat;
-  height: 170px;
   width: 320px;
+  height: 170px;
   margin: 0 auto;
 }
 
@@ -23,6 +23,8 @@
   font-size: 14px;
   color: $midnight;
   line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 [placeholder] {
@@ -31,15 +33,55 @@
   color: $midnight;
 }
 
+fieldset {
+  border: none;
+  font-size: 0;
+}
+
+
 // TABLET min-width: 660px /////////////////////////////////////////////
 
 @media (min-width: 660px) {
   .form__bg {
     background: url("..//img/bg-back-tablet@1x.jpg")center no-repeat;
     background-size: 1200px 729px;
-    height: 440px;
     width: 100%;
+    height: 440px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .form__title-text {
+    font-size: 18px;
+    width: 495px;
+  }
+
+
+  fieldset {
+    border: 2px solid #e5e5e5;
+    font-size: 15px;
+    border-radius: 3px;
+  }
+
+
+  .checkboxes__legend,
+  .radio__legend,
+  .user-contacts__legend,
+  .comment__legend {
+    color: $cerise;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .comment__text {
+    display: none;
+  }
+
+  .form__title {
+    font-size: 50px;
+    line-height: 50px;
+    width: 490px;
   }
 
   .checkboxes__title {
@@ -57,8 +99,15 @@
   }
 
   .full-name {
+    width: 620px;
     order: 1;
   }
+
+  .full-name__field {
+    margin: 0 auto;
+  }
+
+
 
   .radio {
     order: 2;
@@ -76,17 +125,31 @@
     order: 5;
   }
 
+
+  .full-name__field {
+    display: flex;
+    height: 65px;
+  }
+
 }// min-width: 660px
 
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
 
 @media (min-width: 1200px) {
   .form__bg {
-    background: url("..//img/bg-back-tablet@1x.jpg")center no-repeat;
+    background: url("..//img/bg-back-desktop@1x.jpg")center no-repeat;
     background-size: 2560px 853px;
-    height: 395px;
     width: 100%;
+    height: 395px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .form__title {
+    font-size: 50px;
+    line-height: 50px;
+    width: 760px;
   }
 
   .form__items {
@@ -97,7 +160,7 @@
 
   .full-name {
     width: 470px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .radio {
