@@ -16,4 +16,52 @@
   height: 59px;
 }
 
+// TABLET min-width: 660px///////////////////////////////////
+
+@media (min-width: 660px) {
+
+  .full-name {
+    width: 620px;
+    order: 1;
+  }
+
+  .full-name__field {
+    margin: 0 auto;
+  }
+
+  .full-name__field {
+    display: flex;
+    height: 65px;
+  }
+
+  .full-name__name {
+    flex-grow: 1;
+  }
+
+  .full-name__size {
+    flex-grow: 2;
+  }
+
+}//min-width: 660px
+
+//DESCTOP min-width: 1200px///////////////////////////////////
+
+@media (min-width: 1200px) {
+
+  .full-name {
+    width: 470px;
+    margin: 0 auto;
+  }
+
+
+
+}//min-width: 1200px
+
+
+
+
+
+
+
+
 

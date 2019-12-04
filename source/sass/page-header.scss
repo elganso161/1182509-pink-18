@@ -1,7 +1,6 @@
 .page-header {
   background: rgba(29, 38, 49, 30%);
   text-align: center;
-  min-height: 325px;
 }
 
 
@@ -77,10 +76,11 @@
 @media (min-width: 660px){
   .page-header {
     min-height: 365px;
+
   }
 
   .page-header__header {
-    min-height: 109px;
+    height: 106px;
   }
 
   .page-header__logo-image {
@@ -100,7 +100,7 @@
     z-index: 1;
     display: flex;
     width: 100%;
-    min-height: 110px;
+    height: 110px;
     justify-content: space-between;
     background-color: rgba(17, 22, 29, 0.3);
   }

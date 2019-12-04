@@ -9,3 +9,29 @@
   width: 280px;
   height: 59px;
 }
+
+
+// TABLET min-width: 660px /////////////////////////////////////////////
+
+@media (min-width: 660px) {
+
+  .user-contacts {
+    order: 3;
+  }
+
+}//min-width: 660px
+
+
+// DESCTOP min-width: 1200px /////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+
+  .user-contacts {
+    width: 940px;
+  }
+
+
+
+
+
+}//min-width: 1200px

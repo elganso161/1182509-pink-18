@@ -1,0 +1,69 @@
+.timer {
+  display: none;
+}
+
+@media (min-width: 660px) {
+
+  .timer {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+
+
+  .timer__numb {
+    font-size: 96px;
+    line-height: 150px;
+    color: $cerise;
+    border: 14px solid $cerise;
+    border-radius: 50%;
+    padding: 13px 33px;
+    margin-top: 52px;
+    margin-left: 39px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -69px;
+      left: -32px;
+      z-index: -1;
+      background: url("..//img/icon-timer.svg") center no-repeat;
+      background-size: 240px 277px;
+      width: 240px;
+      height: 277px;
+    }
+  }
+
+  .timer__right {
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 86px;
+  }
+
+  .timer__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+    margin-bottom: 10px;
+
+  }
+
+  .timer__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $midnight;
+    margin: 0;
+    width: 295px;
+    margin-bottom: 10px;
+  }
+
+  .timer__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: $cerise;
+  }
+
+
+}//min-width: 660px
+
