@@ -9,6 +9,7 @@
   .timer {
     display: flex;
     width: 660px;
+    margin: 0 auto;
   }
 
 
@@ -99,7 +100,7 @@
       position: absolute;
       content: "";
       top: -88px;
-      left: -38px;
+      left: -40px;
       z-index: -1;
       background: url("..//img/icon-timer.svg") center no-repeat;
       background-size: 298px 345px;
