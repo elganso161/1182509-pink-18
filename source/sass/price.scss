@@ -1,6 +1,31 @@
+.price {
+  margin-bottom: 30px;
+}
+
+.price__value-desctop {
+  display: none;
+}
+
+.price__cell-desctop {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .price__list {
   margin: 0 auto;
+  margin-left: -260px;
+  width: 840px;
+  border-collapse:collapse;
 }
+
+.price__item {
+  width: 280px;
+}
+
 
 .price__value {
   font-size: 18px;
@@ -8,6 +33,11 @@
   color: $white;
   line-height: 30px;
   background-color: $midnight;
+  width: 250px;
+  height: 99px;
+  padding: 0 75px;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
   span {
     font-size: 24px;
     font-weight: 300;
@@ -17,4 +47,63 @@
 .price__cell {
   font-size: 14px;
   color: $midnight;
+  width: 150px;
+  height: 60px;
+  padding-left: 23px;
+  border: 2px solid #e5e5e5;
 }
+
+.price__cell-yes {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 235px;
+    z-index: 1;
+    background: url("..//img/icon-yes.svg")center no-repeat;
+    background-size: 31px 21px;
+    width: 31px;
+    height: 21px;
+  }
+}
+
+.price__cell-no {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 235px;
+    z-index: 1;
+    background: url("..//img/icon-no.svg")center no-repeat;
+    background-size: 27px 26px;
+    width: 27px;
+    height: 26px;
+  }
+}
+
+
+// TABLET min-width: 660px/////////////////////////////////////////
+
+@media (min-width: 660px) {
+
+  // .price__value-desctop {
+  //   display: block;
+  // }
+
+  // .price__cell-desctop {
+  //   display: block;
+  // }
+
+  .price__list {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  .price__item {
+    width: 153px;
+  }
+
+
+}//min-width: 660px

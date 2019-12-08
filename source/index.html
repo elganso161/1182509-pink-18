@@ -9,7 +9,7 @@
   </head>
   <body>
   <header class="page-header">
-<div class="container">
+  <div class="container container-flex">
     <div class="page-header__header">
       <a class="page-header__logo">
           <picture>
@@ -72,12 +72,13 @@
 
 
     <section class="description">
-
       <h2 class="visually-hidden">Описание приложения</h2>
+      <div class="description__title-block">
       <p class="description__title">Устали от серости мегаполиса?</p>
       <p class="description__sub-title">Нам есть, что вам
           предложить!</p>
-          <div class="container">
+        </div>
+          <div class="container container-flex">
           <ul class="description__list">
             <li class="description__item item__phone-1">
               <h3 class="description-item__title">Поднимает настроение</h3>
@@ -93,6 +94,21 @@
             </li>
           </ul>
         </div>
+    </section>
+    <section class="timer">
+      <div class="timer__left">
+        <p class="timer__numb">24</p>
+      </div>
+      <div class="timer__right">
+      <h3 class="timer__title">Эффект<br class="timer__br"> на 24 часа!</h3>
+      <p class="timer__text">
+        Британские ученые провели исследования
+        и доказали, что положительный эффект
+        от использования приложения длится
+        целые сутки!
+      </p>
+      <a class="timer__link" href="#">Узнать больше об исследовании</a>
+    </div>
     </section>
     <section class="reviews">
       <div class="container">
@@ -116,32 +132,39 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Цены</h2>
-      <table class="price__list">
-          <tr class="price__item">
-            <th class="price__value">Стандарт <span>3,99 USD</span></th>
-            <th class="price__value">Стандарт <span>3,99 USD</span></th>
-            <th class="price__value">Стандарт <span>3,99 USD</span></th>
-          </tr>
-          <tr class="price__item">
-            <td class="price__cell">Розовый фильтр</td>
-            <td class="price__cell">Розовый фильтр</td>
-            <td class="price__cell">Розовый фильтр</td>
-          </tr>
-          <tr class="price__item">
-            <td class="price__cell">Смайлики</td>
-            <td class="price__cell">Смайлики</td>
-            <td class="price__cell">Смайлики</td>
-          </tr>
-          <tr class="price__item">
-            <td class="price__cell">Комментарии</td>
-            <td class="price__cell">Комментарии</td>
-            <td class="price__cell">Комментарии</td>
-          </tr>
-      </table>
+      <div class="wrapper">
+        <table class="price__list">
+            <tr class="price__item">
+              <th class="price__value price__value-desctop"></th>
+              <th class="price__value">База <span>1,99 USD</span></th>
+              <th class="price__value">Стандарт <span>3,99 USD</span></th>
+              <th class="price__value">Анлим <span>9,99 USD</span></th>
+            </tr>
+            <tr class="price__item">
+              <td class="price__cell price__cell-desctop">1</td>
+              <td class="price__cell price__cell-yes">Розовый фильтр</td>
+              <td class="price__cell price__cell-yes">Розовый фильтр</td>
+              <td class="price__cell price__cell-yes">Розовый фильтр</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__cell price__cell-desctop">1</td>
+              <td class="price__cell price__cell-no">Смайлики</td>
+              <td class="price__cell price__cell-yes">Смайлики</td>
+              <td class="price__cell price__cell-yes">Смайлики</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__cell price__cell-desctop">1</td>
+              <td class="price__cell price__cell-no">Комментарии</td>
+              <td class="price__cell price__cell-no">Комментарии</td>
+              <td class="price__cell price__cell-yes">Комментарии</td>
+            </tr>
+        </table>
+      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__text-title">Остались вопросы?
+        <div class="contacts__block">
+        <p class="contacts__text-title">Остались вопросы?
         Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -159,7 +182,8 @@
             </p>
           </li>
         </ul>
-        <div>
+      </div>
+        <div class="contacts__map-block">
           <a href="#">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg">

@@ -9,3 +9,31 @@
   width: 280px;
   height: 200px;
 }
+
+// TABLET min-width: 660px /////////////////////////////////////////////
+
+@media (min-width: 660px) {
+
+  .comment__text {
+    display: none;
+  }
+
+  .comment {
+    order: 5;
+  }
+
+  
+}//min-width: 660px
+
+
+
+
+// DESCTOP min-width: 1200px /////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+
+  .comment {
+    width: 940px;
+  }
+
+}//min-width: 1200px

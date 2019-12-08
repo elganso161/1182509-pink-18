@@ -18,3 +18,31 @@
 }
 
 
+
+// TABLET min-width: 660px /////////////////////////////////////////////
+
+@media (min-width: 660px) {
+  .checkboxes__title {
+    display: none;
+  }
+
+  .checkboxes {
+    order: 4;
+  }
+
+
+
+}//min-width: 660px
+
+
+
+// DESCTOP min-width: 1200px /////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+
+  .checkboxes {
+    width: 940px;
+  }
+
+
+}//min-width: 1200px

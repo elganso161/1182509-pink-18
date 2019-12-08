@@ -1,0 +1,145 @@
+.timer {
+  display: none;
+}
+
+// TABLET min-width: 660px/////////////////////////////////////////////
+
+@media (min-width: 660px) {
+
+  .timer {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+
+  .timer__numb {
+    font-size: 96px;
+    line-height: 150px;
+    color: $cerise;
+    border: 14px solid $cerise;
+    border-radius: 50%;
+    padding: 13px 33px;
+    margin-top: 52px;
+    margin-left: 39px;
+    width: 204px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -69px;
+      left: -32px;
+      z-index: -1;
+      background: url("..//img/icon-timer.svg") center no-repeat;
+      background-size: 240px 277px;
+      width: 240px;
+      height: 277px;
+    }
+  }
+
+
+  .timer__left {
+    width: 50%;
+  }
+
+  .timer__right {
+    margin-top: 5px;
+  }
+
+  .timer__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+    margin-bottom: 10px;
+  }
+
+  .timer__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $midnight;
+    margin: 0;
+    width: 295px;
+    margin-bottom: 10px;
+  }
+
+  .timer__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: $cerise;
+  }
+
+
+}//min-width: 660px
+
+
+// DESCTOP min-width: 1200px/////////////////////////////////////////////
+
+
+@media (min-width: 1200px) {
+
+  .timer {
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .timer__numb {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150px;
+    color: #d22856;
+    border: 17px solid #d22856;
+    border-radius: 50%;
+    padding: 27px 37px;
+    margin-top: 2px;
+    margin-left: 34px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -88px;
+      left: -40px;
+      z-index: -1;
+      background: url("..//img/icon-timer.svg") center no-repeat;
+      background-size: 298px 345px;
+      width: 298px;
+      height: 345px;
+    }
+  }
+
+  .timer__left {
+    width: 39%;
+  }
+
+  .timer__right {
+    width: 570px;
+    margin-top: 22px;
+  }
+
+  .timer__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 500px;
+    letter-spacing: 0.03em;
+    margin-bottom: 35px;
+  }
+
+  .timer__br {
+    display: none;
+  }
+
+  .timer__title {
+    width: 500px;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  .timer__link {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+
+
+}//min-width: 1200px
