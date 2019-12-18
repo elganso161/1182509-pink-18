@@ -1,19 +1,82 @@
 .radio {
-  text-align: left;
+  height: 340px;
+  background-color: #f2f2f2;
+  margin-bottom: 9px;
+
 }
 
 .radio__title {
   font-size: 14px;
   color: $cerise;
   line-height: 18px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
+  width: 280px;
+  padding-top: 38px;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
+
+.radio__list {
+  width: 280px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.radio__list-item {
+  margin-left: 20px;
+  margin-bottom: 42px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -20px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   top: 8px;
+  //   left: -8px;
+  //   z-index: 2;
+  //   width: 15px;
+  //   height: 15px;
+  //   border-radius: 50px;
+  //   background-color: #d22856;
+  //   cursor: pointer;
+  // }
+}
+
+input:checked+.radio__list-item::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -8px;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #d22856;
+  cursor: pointer;
+}
+
+
 
 .radio__text {
   font-size: 18px;
   color: $midnight;
   line-height: 30px;
+  margin-left: 50px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
 }
 
 
@@ -26,8 +89,38 @@
   }
 
   .radio {
+    background: none;
+    margin-bottom: 9px;
     order: 2;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
+
+  .radio__fieldset {
+    border: 2px solid #e5e5e5;
+    font-size: 14px;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    width: 620px;
+    height: 310px;
+  }
+
+  .radio__list {
+    width: 500px;
+  }
+
+  .radio__list-item {
+    margin-top: 41px;
+    margin-left: 18px;
+    margin-bottom: 46px;
+  }
+
+
+  .radio__text {
+    margin-left: 39px;
+  }
+
 
 
 }//min-width: 660px
@@ -36,9 +129,17 @@
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
 
 @media (min-width: 1200px) {
-  
+
   .radio {
-    width: 470px;
+    width: 435px;
+  }
+
+  .radio__fieldset {
+    width: 435px;
+  }
+
+  .radio__list {
+    width: 300px;
   }
 
 

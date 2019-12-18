@@ -2,6 +2,8 @@
   text-align: center;
   margin: 0 auto;
   display: block;
+  margin-bottom: 55px;
+
 }
 
 .form__bg {
@@ -10,11 +12,12 @@
   height: 170px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  margin-bottom: 43px;
 }
 
 
 .form__title {
+  padding-top: 27px;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -23,12 +26,17 @@
   width: 235px;
 }
 
+
+
 .form__title-text {
   font-size: 14px;
   color: $midnight;
   line-height: 30px;
   width: 280px;
   margin: 0 auto;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+
 }
 
 [placeholder] {
@@ -37,28 +45,30 @@
   color: $midnight;
 }
 
-fieldset {
-  border: none;
-  font-size: 0;
-}
 
 
 // TABLET min-width: 660px /////////////////////////////////////////////
 
 @media (min-width: 660px) {
+  .form {
+    margin-bottom: 70px;
+  }
+
+
   .form__bg {
     background: url("..//img/bg-back-tablet@1x.jpg")center no-repeat;
     background-size: 1200px 729px;
     width: 100%;
-    height: 440px;
+    height: 331px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    margin-bottom: 93px;
   }
 
   .form__title-text {
     font-size: 18px;
     width: 495px;
+    margin-bottom: 66px;
   }
 
   fieldset {
@@ -66,6 +76,8 @@ fieldset {
     font-size: 15px;
     border-radius: 3px;
   }
+
+
 
   .checkboxes__legend,
   .radio__legend,
@@ -78,8 +90,9 @@ fieldset {
 
   .form__title {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 59px;
     width: 490px;
+    padding-top: 73px;
   }
 
   .form__items {
@@ -100,6 +113,7 @@ fieldset {
     width: 100%;
     height: 395px;
     margin: 0 auto;
+    margin-bottom: 93px;
     display: flex;
     align-items: center;
   }
@@ -114,12 +128,16 @@ fieldset {
     display: flex;
     flex-wrap: wrap;
     flex-direction: inherit;
+    margin-top: 65px;
+
   }
 
 
   .form__title-text {
     width: 765px;
     margin: 0 auto;
+    margin-bottom: 20px;
+
   }
 
 
