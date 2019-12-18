@@ -131,7 +131,15 @@ input:checked+.radio__list-item::after {
 @media (min-width: 1200px) {
 
   .radio {
-    width: 470px;
+    width: 435px;
+  }
+
+  .radio__fieldset {
+    width: 435px;
+  }
+
+  .radio__list {
+    width: 300px;
   }
 
 

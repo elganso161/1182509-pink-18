@@ -22,7 +22,7 @@
 }
 
 
-.checkoxes-block {
+.checkboxes-block {
   display: flex;
   align-items: center;
   width: 280px;
@@ -105,7 +105,23 @@ fieldset {
 
   .checkboxes {
     width: 940px;
+    height: 220px;
+    margin-bottom: 78px;
   }
+
+  .checkboxes__flex {
+    width: 914px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkboxes__fieldset {
+    height: 243px;
+  }
+
+
 
 
 }//min-width: 1200px

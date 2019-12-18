@@ -52,7 +52,6 @@
     margin-top: 32px;
     margin-left: 47px;
 }
-  }
 
   .user-contacts__text {
     width: 160px;
@@ -73,9 +72,28 @@
 
   .user-contacts {
     width: 940px;
+    height: 200px;
+    margin-bottom: 29px;
   }
 
+  .user-contacts__size {
+    width: 375px;
+  }
 
+  .user-block {
+    width: 375px;
+  }
+
+.user__flex {
+  display: flex;
+  margin: 0 auto;
+  height: 159px;
+}
+
+.user-contacts__fieldset {
+  width: 940px;
+  height: 177px;
+}
 
 
 
