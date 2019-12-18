@@ -35,6 +35,7 @@
     color: $white;
     text-transform: none;
     font-weight: 300;
+    letter-spacing: 0.03em;
   }
 
   .main-nav__list {
@@ -45,6 +46,7 @@
   }
   .main-nav__item {
     border: none;
+    padding-left: 6px;
   }
 
   .main-nav {

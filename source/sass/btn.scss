@@ -1,0 +1,77 @@
+.btn__post {
+  margin: 0 auto;
+  margin-bottom: 81px;
+  width: 320px;
+
+}
+
+.btn {
+	width: 280px;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 15px;
+  cursor: pointer;
+
+	border: 2px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 30px;
+}
+
+.btn__post-submit {
+  margin-bottom: 13px;
+  border-color: #d22856;
+  color: #d22856;
+}
+
+
+.btn__post-reset {
+  border-color: rgba(221, 223, 224, 0.1);
+  color: rgba(221, 223, 224, 0.1);
+}
+
+
+// TABLET min-width:660px /////////////////////////////////////////
+
+@media (min-width: 660px) {
+  .btn__post {
+    margin: 0;
+    height: 140px;
+  }
+
+  .btn {
+    width: 257px;
+  }
+
+  .btn__post-submit {
+    margin-left: 33px;
+    margin-bottom: 27px;
+  }
+
+
+  .btn__post-reset {
+    margin-left: 33px;
+  }
+
+
+}//min-width: 660px
+
+
+
+// DESCTOP min-width:1200px /////////////////////////////////////////
+
+@media (min-width: 1200px) {
+
+  .btn {
+    width: 185px;
+  }
+
+  .btn__post {
+    height: 60px;
+    width: 50%;
+  }
+
+  .btn__post-submit {
+    margin-left: -66px;
+  }
+
+}//min-width: 1200px

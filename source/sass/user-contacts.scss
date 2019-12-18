@@ -1,13 +1,30 @@
+.user-contacts {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
 .user-contacts__text {
   font-size: 14px;
   text-transform: uppercase;
   color: $cerise;
   line-height: 30px;
+  padding-left: 21px;
+  letter-spacing: 0.02em;
 }
 
 .user-contacts__size {
   width: 280px;
   height: 59px;
+}
+
+.user-contacts__size[placeholder] {
+  padding-left: 15px;
+}
+
+.user-block {
+  text-align: left;
+  margin-bottom: 24px;
 }
 
 
@@ -17,6 +34,34 @@
 
   .user-contacts {
     order: 3;
+    width: 620px;
+    height: 325px;
+    margin-bottom: 50px;
+  }
+
+  .user-contacts__fieldset {
+    border: 2px solid #e5e5e5;
+    font-size: 15px;
+    border-radius: 3px;
+    height: 322px;
+  }
+
+  .user-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-left: 47px;
+}
+  }
+
+  .user-contacts__text {
+    width: 160px;
+    order: 2;
+  }
+
+  .user-contacts__size {
+    width: 500px;
+    order: 1;
   }
 
 }//min-width: 660px

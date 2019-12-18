@@ -1,7 +1,10 @@
 .tools {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 208px;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .crop {
@@ -27,7 +30,19 @@
 .contrast {
   border: none;
   background: url("..//img/icon-editor-contrast.svg")center no-repeat;
+  padding-right: 43px;
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
+
+
+// TABLET min-width: 660px////////////////////////////////
+
+@media (min-width: 660px) {
+
+  .tools {
+    display: none;
+  }
+
+}//min-width: 660px

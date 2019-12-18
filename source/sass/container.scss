@@ -1,4 +1,20 @@
-@media(min-width: 1200px){
+
+@media (min-width: 660px) {
+
+
+  .container-footer {
+    margin: 0 auto;
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}//min-width: 660px
+
+
+
+
+@media (min-width: 1200px) {
   .container {
     margin: 0 auto;
     width: 960px;
@@ -11,6 +27,14 @@
     justify-content: space-between;
     align-items: center;
   }
-}
+
+  .container-footer {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}//min-width: 1200px
 
 

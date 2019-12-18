@@ -1,13 +1,61 @@
+.comment{
+  margin-bottom: 45px;
+}
+
 .comment__text {
   font-size: 14px;
   line-height: 30px;
   color: $cerise;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .comment__size {
   width: 280px;
   height: 200px;
+  resize: none;
+  padding-top: 23px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.submit-form {
+  width: 280px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 21px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  width: 280px;
+  height: 64px;
+}
+
+.stats__legend {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $midnight;
+  letter-spacing: 0.02em;
+}
+
+.stats__legend sup {
+  color: #d22856;
+}
+
+.comment__block-emotion {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.submit__stats {
+  display: flex;
+  flex-direction: column;
 }
 
 // TABLET min-width: 660px /////////////////////////////////////////////
@@ -20,9 +68,38 @@
 
   .comment {
     order: 5;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    width: 620px;
+    height: 310px;
   }
 
-  
+
+  .submit__stats {
+    margin: 0 auto  ;
+    width: 620px;
+    align-items: center;
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .submit-form {
+    width: 300px;
+    margin: 0;
+  }
+
+
+
+  .comment__fieldset {
+    border: 2px solid #e5e5e5;
+    font-size: 15px;
+    border-radius: 3px;
+    height: 303px;
+
+  }
+
+
 }//min-width: 660px
 
 
