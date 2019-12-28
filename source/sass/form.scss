@@ -107,6 +107,12 @@
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
 
 @media (min-width: 1200px) {
+
+  .form {
+    margin-bottom: 50px;
+  }
+
+
   .form__bg {
     background: url("..//img/bg-back-desktop@1x.jpg")center no-repeat;
     background-size: 2560px 853px;
@@ -119,8 +125,9 @@
   }
 
   .form__title {
+    padding-top: 70px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 63px;
     width: 760px;
   }
 

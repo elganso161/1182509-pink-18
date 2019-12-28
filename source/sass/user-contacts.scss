@@ -16,6 +16,7 @@
 .user-contacts__size {
   width: 280px;
   height: 59px;
+  letter-spacing: 0.02em;
 }
 
 .user-contacts__size[placeholder] {
@@ -56,6 +57,8 @@
   .user-contacts__text {
     width: 160px;
     order: 2;
+    margin-top: 10px;
+    padding-left: 17px;
   }
 
   .user-contacts__size {

@@ -15,7 +15,7 @@
   color: $cerise;
   text-align: center;
   width: 220px;
-  padding-top: 38px;
+  padding-top: 42px;
   margin: 0 auto;
   margin-bottom: 15px;
 
@@ -38,7 +38,9 @@
   background-color: #fff;
   border-radius: 1px;
   position: relative;
+  cursor: pointer;
 }
+
 
 input:checked+.checkboxes-costom::before {
   position: absolute;
@@ -48,9 +50,10 @@ input:checked+.checkboxes-costom::before {
   z-index: 1;
   width: 29px;
   height: 29px;
-  background-color: #000;
+  background: url("..//img/icon-yes.svg")center no-repeat;
   cursor: pointer;
 }
+
 
 .visually-hidden:focus+.checkboxes-costom {
 	outline: 1px solid blue;
@@ -95,6 +98,21 @@ fieldset {
     height: 565px;
   }
 
+  .checkboxes__legend {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .checkboxes-block {
+    margin-top: 35px;
+    margin-left: 45px;
+}
+
+  .checkboxes__text {
+    margin-left: 20px;
+}
+
+
 }//min-width: 660px
 
 
@@ -115,10 +133,16 @@ fieldset {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .checkboxes__fieldset {
     height: 243px;
+  }
+
+  .checkboxes-block {
+    margin: 0;
+    height: 90px;
   }
 
 
