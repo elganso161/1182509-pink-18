@@ -35,8 +35,19 @@
     padding: 12px 13px;
     border: 2px solid #e9ebec;
     border-radius: 50px;
+    opacity: 1;
   }
 }
+
+.footer__link-twitter:active::before {
+  opacity: 0.3;
+}
+
+.footer__link-twitter:hover::before {
+  border-color: #283645;
+  transition: 0.2s;
+}
+
 
 .footer__link-facebook {
   position: relative;
@@ -53,7 +64,17 @@
     padding: 12px 13px;
     border: 2px solid #e9ebec;
     border-radius: 50px;
+    opacity: 1;
   }
+}
+
+.footer__link-facebook:active::before {
+  opacity: 0.3;
+}
+
+.footer__link-facebook:hover::before {
+  border-color: #283645;
+  transition: 0.2s;
 }
 
 .footer__link-youtube {
@@ -71,8 +92,20 @@
     padding: 12px 13px;
     border: 2px solid #e9ebec;
     border-radius: 50px;
+    opacity: 1;
   }
 }
+
+.footer__link-youtube:active::before {
+  opacity: 0.3;
+}
+
+.footer__link-youtube:hover::before {
+  border-color: #283645;
+  transition: 0.2s;
+}
+
+
 
 .footer__academy {
   display: flex;

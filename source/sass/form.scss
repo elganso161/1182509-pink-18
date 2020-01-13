@@ -35,7 +35,7 @@
   width: 280px;
   margin: 0 auto;
   letter-spacing: 0.02em;
-  margin-bottom: 6px;
+  margin-bottom: 39px;
 
 }
 
@@ -45,7 +45,9 @@
   color: $midnight;
 }
 
-
+.form__span {
+  display: none;
+}
 
 // TABLET min-width: 660px /////////////////////////////////////////////
 
@@ -99,6 +101,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .form__span {
+    display: inline-block;
   }
 
 

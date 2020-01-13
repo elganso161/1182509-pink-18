@@ -17,6 +17,16 @@
   margin-top: 7px;
   width: 280px;
   height: 59px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  outline: none;
+  &:hover{
+    border: 2px solid #283645;
+    transition: 0.2s;
+  }
+  &:focus {
+    border: 2px solid #d22856;
+  }
 }
 
 .full-name__size[placeholder] {

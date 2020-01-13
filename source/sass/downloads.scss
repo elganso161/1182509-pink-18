@@ -17,6 +17,9 @@
     z-index: 2;
     width: 256px;
     height: 290px;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("..//img/iphone-hand-mobile@2x.png");
+    }
   }
   &::after {
     position: absolute;
@@ -29,8 +32,15 @@
     z-index: 1;
     width: 320px;
     height: 395px;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("..//img/bg-back-mobile@2x.jpg");
+    }
   }
 }
+
+
+
+
 
 .downloads__title {
   padding-top: 24px;
@@ -96,7 +106,13 @@
   margin: 0 auto;
 }
 
+.logo-apple {
+  fill: #fff;
+}
 
+.logo-android {
+  margin-top: 5px;
+}
 
 // TABLE min-width: 660px//////////////////////////////////////////////////////////
 
@@ -117,6 +133,9 @@
       width: 100%;
       height: 545px;
       z-index: -1;
+      @media (min-resolution: 1.5dppx) {
+        background-image:url("../img/iphone-hand-tablet@2x.png");
+      }
     }
     &::after {
       position: absolute;
@@ -129,6 +148,9 @@
       height: 620px;
       margin: 0 auto;
       z-index: -2;
+      @media (min-resolution: 1.5dppx) {
+        background-image:url("../img/bg-back-tablet@2x.jpg");
+      }
     }
   }
 
@@ -181,7 +203,6 @@
     width: 100%;
     height: 853px;
     margin-bottom: 84px;
-
     &::before {
       display: none;
     }
@@ -195,6 +216,9 @@
       z-index: -2;
       width: 100%;
       height: 853px;
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+      }
     }
   }
 
@@ -221,6 +245,9 @@
       z-index: -1;
       width: 720px;
       height: 645px;
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+      }
     }
   }
 

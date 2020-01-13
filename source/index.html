@@ -14,12 +14,12 @@
       <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 600px)" srcset="./img/logo-pink-white-tablet.svg">
+            <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
           </picture>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-        <div class="burger burger-active">
+        <div class="burger burger__nojs">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -56,13 +56,22 @@
       <a class="downloads__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
       <ul class="downloads-icon__list">
         <li class="downloads__item">
-          <img class="downloads__icon" src="./img/logo-apple.svg" width="47" height="56" alt="ios">
+          <svg class="downloads__icon logo-apple" width="47" height="56">
+            <use xlink:href="./img/spritemap.svg#logo-apple"></use>
+          </svg >
+          <!-- <img class="downloads__icon" src="./img/logo-apple.svg" width="47" height="56" alt="ios"> -->
         </li>
         <li class="downloads__item">
-          <img class="downloads__icon" src="./img/logo-android.svg" width="43" height="47" alt="android">
+          <svg class="downloads__icon logo-android" width="43" height="47">
+            <use xlink:href="./img/spritemap.svg#logo-android"></use>
+          </svg >
+          <!-- <img class="downloads__icon" src="./img/logo-android.svg" width="43" height="47" alt="android"> -->
         </li>
         <li class="downloads__item">
-          <img class="downloads__icon" src="./img/logo-microsoft.svg" width="44" height="41" alt="windows">
+          <svg class="downloads__icon logo-microsoft" width="44" height="41">
+            <use xlink:href="./img/spritemap.svg#logo-microsoft"></use>
+          </svg >
+          <!-- <img class="downloads__icon" src="./img/logo-microsoft.svg" width="44" height="41" alt="windows"> -->
         </li>
       </ul>
       <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>

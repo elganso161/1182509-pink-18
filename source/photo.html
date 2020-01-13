@@ -15,12 +15,12 @@
       <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-          <source media="(min-width: 600px)" srcset="./img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Pink">
         </picture>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-        <div class="burger burger-active">
+        <div class="burger burger__nojs">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -60,9 +60,13 @@
           <li class="gallery__item-first">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/panorama-tablet@1x.jpg">
-                <img class="gallery-item__image-first" src="./img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.webp 1x, ./img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.webp 1x, ./img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+                <img class="gallery-item__image-first" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg" width="320px" height="137px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg-first">
@@ -78,9 +82,13 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg">
-                  <source media="(min-width: 600px)" srcset="./img/photo-car-tablet@1x.jpg">
-                    <img class="gallery-item__image" src="./img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.webp 1x, ./img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.webp 1x, ./img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-car-mobile@1x.webp 1x, ./img/photo-car-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
@@ -93,9 +101,13 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg">
-                  <source media="(min-width: 600px)" srcset="./img/photo-drumset-tablet@1x.jpg">
-                    <img class="gallery-item__image" src="./img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.webp 1x, ./img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.webp 1x, ./img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-drumset-mobile@1x.webp 1x, ./img/photo-drumset-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg 1x, ./img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg 1x, ./img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image" src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
@@ -108,9 +120,13 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg">
-                  <source media="(min-width: 600px)" srcset="./img/photo-window-tablet@1x.jpg">
-                    <img class="gallery-item__image" src="./img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.webp 1x, ./img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.webp 1x, ./img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-window-mobile@1x.webp 1x, ./img/photo-window-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg 1x, ./img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg 1x, ./img/photo-window-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image" src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
@@ -123,9 +139,14 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/photo-fair-tablet@1x.jpg">
-                <img class="gallery-item__image" src="./img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.webp 1x, ./img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.webp 1x, ./img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-fair-mobile@1x.webp 1x, ./img/photo-fair-mobile@2x.webp 2x">
+
+
+                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg 1x, ./img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg 1x, ./img/photo-fair-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
@@ -138,9 +159,13 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/photo-pov-tablet@1x.jpg">
-                <img class="gallery-item__image" src="./img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.webp 1x, ./img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.webp 1x, ./img/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-pov-mobile@1x.webp 1x, ./img/photo-pov-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg 1x, ./img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg 1x, ./img/photo-pov-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
@@ -153,9 +178,13 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/photo-wing-tablet@1x.jpg">
-                <img class="gallery-item__image" src="./img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.webp 1x, ./img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.webp 1x, ./img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg 1x, ./img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg 1x, ./img/photo-wing-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
@@ -176,9 +205,13 @@
       <form class="filtes__form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="filters__pictures">
           <picture>
-              <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="./img/photo-road-tablet@1x.jpg">
-              <img class="filter__image" src="./img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Картинка">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.webp 1x, ./img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.webp 1x, ./img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/photo-road-mobile@1x.webp 1x, ./img/photo-road-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg x2">
+              <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg 1x, ./img/photo-road-tablet@2x.jpg 2x">
+              <img class="filter__image" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg" width="280px" height="374px" alt="Картинка">
           </picture>
         </div>
         <div class="tools">
