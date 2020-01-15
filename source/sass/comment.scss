@@ -17,6 +17,8 @@
   padding-top: 23px;
   padding-left: 18px;
   padding-right: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
 }
 
 .submit-form {
@@ -58,6 +60,10 @@
   flex-direction: column;
 }
 
+.comment__span {
+  display: none;
+}
+
 // TABLET min-width: 660px /////////////////////////////////////////////
 
 @media (min-width: 660px) {
@@ -96,7 +102,19 @@
     font-size: 15px;
     border-radius: 3px;
     height: 303px;
+  }
 
+  .comment__block-emotion {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .comment__size {
+    width: 500px;
+    height: 190px;
+    margin-left: -27px;
+    margin-top: 30px;
+    padding-top: 13px;
   }
 
 
@@ -125,12 +143,15 @@
 
 
   .comment__size {
-    width: 890px;
-    height: 179px;
-    margin-left: -304px;
+    width: 816px;
+    height: 129px;
+    margin-top: 25px;
+    margin-left: -100px;
   }
 
-
+  .comment__span {
+    display: inline;
+  }
 
 
 }//min-width: 1200px

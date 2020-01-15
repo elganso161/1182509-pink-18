@@ -15,11 +15,23 @@
 
 .user-contacts__size {
   width: 280px;
-  height: 59px;
+  height: 61px;
+  letter-spacing: 0.02em;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  outline: none;
+  &:hover{
+    border: 2px solid #283645;
+    transition: 0.2s;
+  }
+    &:focus {
+      border: 2px solid #d22856;
+    }
 }
 
 .user-contacts__size[placeholder] {
-  padding-left: 15px;
+  padding-left: 20px;
+  padding-top: 6px;
 }
 
 .user-block {
@@ -56,11 +68,45 @@
   .user-contacts__text {
     width: 160px;
     order: 2;
+    margin-top: 10px;
+    padding-left: 17px;
   }
 
   .user-contacts__size {
     width: 500px;
     order: 1;
+  }
+
+  .user-contacts__text-phone {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -69px;
+      left: 441px;
+      z-index: 1;
+      width: 56px;
+      height: 57px;
+      background: url("../img/icon-phone.svg") center no-repeat;
+      background-size: 20px 19px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .user-contacts__text-mail {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -69px;
+      left: 441px;
+      z-index: 1;
+      width: 56px;
+      height: 56px;
+      background: url("../img/icon-mail.svg") center no-repeat;
+      background-size: 20px 19px;
+      background-color: #e5e5e5;
+    }
   }
 
 }//min-width: 660px
@@ -82,6 +128,9 @@
 
   .user-block {
     width: 375px;
+    margin-top: 29px;
+    margin-right: 25px;
+    margin-left: 44px;
   }
 
 .user__flex {
@@ -95,6 +144,38 @@
   height: 177px;
 }
 
+
+.user-contacts__text-phone {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -69px;
+    left: 316px;
+    z-index: 1;
+    width: 56px;
+    height: 56px;
+    background: url("../img/icon-phone.svg") center no-repeat;
+    background-size: 20px 19px;
+    background-color: #e5e5e5;
+  }
+}
+
+.user-contacts__text-mail {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -69px;
+    left: 316px;
+    z-index: 1;
+    width: 56px;
+    height: 56px;
+    background: url("../img/icon-mail.svg") center no-repeat;
+    background-size: 20px 19px;
+    background-color: #e5e5e5;
+  }
+}
 
 
 }//min-width: 1200px

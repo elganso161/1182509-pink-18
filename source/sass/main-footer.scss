@@ -15,7 +15,7 @@
   .main-footer {
     position: absolute;
     padding: 0 20px;
-    // margin-top: 70px;
+    padding-right: 3px;
     height: 127px;
     display: flex;
     justify-content: space-between;
@@ -25,18 +25,113 @@
     width: 100%;
   }
 
+  .main-footer__logo {
+    margin-top: 5px;
+  }
+
   .main-footer__list {
     display: flex;
     justify-content: space-between;
-    width: 183px;
+    width: 177px;
+    margin-top: 18px;
+    margin-left: -17px;
   }
 
   .main-footer__item {
     width: 50px;
     height: 50px;
-    padding: 12px;
-    border: 2px solid #e9ebec;
-    border-radius: 50px;
+  }
+
+  .main-footer__link-twitter {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -25px;
+      z-index: 1;
+      background: url("..//img/icon-twitter.svg")center no-repeat;
+      background-size: 18px 14px;
+      width: 50px;
+      height: 50px;
+      padding: 12px 13px;
+      border: 2px solid #e9ebec;
+      border-radius: 50px;
+      opacity: 1;
+    }
+  }
+
+  .main-footer__link-twitter:active::before {
+    opacity: 0.3;
+  }
+
+  .main-footer__link-twitter:hover::before {
+    border-color: #283645;
+    transition: 0.2s;
+  }
+
+
+
+  .main-footer__link-facebook {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -25px;
+      z-index: 1;
+      background: url("..//img/icon-facebook.svg")center no-repeat;
+      background-size: 9px 18px;
+      width: 50px;
+      height: 50px;
+      padding: 12px 13px;
+      border: 2px solid #e9ebec;
+      border-radius: 50px;
+      opacity: 1;
+    }
+  }
+
+  .main-footer__link-facebook:active::before {
+    opacity: 0.3;
+  }
+
+  .main-footer__link-facebook:hover::before {
+    border-color: #283645;
+    transition: 0.2s;
+  }
+
+  .main-footer__link-youtube {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -25px;
+      z-index: 1;
+      background: url("..//img/icon-youtube.svg")center no-repeat;
+      background-size: 15px 13px;
+      width: 50px;
+      height: 50px;
+      padding: 12px 13px;
+      border: 2px solid #e9ebec;
+      border-radius: 50px;
+      opacity: 1;
+    }
+  }
+
+  .main-footer__link-youtube:active::before {
+    opacity: 0.3;
+  }
+
+  .main-footer__link-youtube:hover::before {
+    border-color: #283645;
+    transition: 0.2s;
+  }
+
+  .main-footer__text {
+    font-size: 14px;
+    margin-top: 2px;
+    letter-spacing: 0.02em;
   }
 
   .main-footer__academy {
@@ -44,7 +139,8 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    width: 150px;
+    width: 129px;
+    margin-top: 31px;
   }
 
 }//*min-width: 660px
@@ -55,8 +151,9 @@
 
 @media (min-width: 1200px) {
   .main-footer {
-    height: 197px;
-    margin-top: 100px;
+    height: 178px;
+    margin-top: 76px;
 
   }
 }
+

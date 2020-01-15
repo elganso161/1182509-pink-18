@@ -11,16 +11,16 @@
 
   <header class="page-header">
       <div class="container container-flex">
-    <div class="page-header__header">
+    <div class="page-header__header page-header__header-tablet">
       <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-          <source media="(min-width: 600px)" srcset="./img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Pink">
         </picture>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-        <div class="burger burger-active">
+        <div class="burger burger__nojs">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -34,7 +34,7 @@
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link">Фотографии</a>
+          <a class="main-nav__link current">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -60,16 +60,20 @@
           <li class="gallery__item-first">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/panorama-tablet@1x.jpg">
-                <img class="gallery-item__image-first" src="./img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.webp 1x, ./img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.webp 1x, ./img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+                <img class="gallery-item__image-first" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg" width="320px" height="137px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg-first">
-            <p class="gallery-item__user-name">Анна
+            <p class="gallery-item__user-name first">Анна
             <time class="gallery-item__user-time">(5 минут назад)</time></p>
             <p class="gallery-item__text-first">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="gallery-item__like">Нравится:</button>
+            <button class="gallery-item__like-first">Нравится: 215</button>
             </div>
           </li>
         </ul>
@@ -78,91 +82,116 @@
           <li class="gallery-item">
             <a href="#">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg">
-                  <source media="(min-width: 600px)" srcset="./img/photo-car-tablet@1x.jpg">
-                    <img class="gallery-item__image" src="./img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.webp 1x, ./img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.webp 1x, ./img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-car-mobile@1x.webp 1x, ./img/photo-car-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
               <p class="gallery-item__user-name">Левон
               <time datetime="2019-11-18 14:54" class="gallery-item__user-time">(5 часов назад)</time></p>
             <p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="gallery-item__like">Нравится</button>
+            <button class="gallery-item__like">Нравится: 356</button>
             </div>
           </li>
           <li class="gallery-item">
             <a href="#">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg">
-                  <source media="(min-width: 600px)" srcset="./img/photo-drumset-tablet@1x.jpg">
-                    <img class="gallery-item__image" src="./img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.webp 1x, ./img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.webp 1x, ./img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-drumset-mobile@1x.webp 1x, ./img/photo-drumset-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg 1x, ./img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg 1x, ./img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image" src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
               <p class="gallery-item__user-name">Антон
               <time class="gallery-item__user-time">(12 часов назад)</time></p>
               <p class="gallery-item__text">Соседи будут рады!</p>
-            <button class="gallery-item__like">Нравится</button>
+            <button class="gallery-item__like">Нравится: 666</button>
           </div>
           </li>
           <li class="gallery-item">
             <a href="#">
               <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg">
-                  <source media="(min-width: 600px)" srcset="./img/photo-window-tablet@1x.jpg">
-                    <img class="gallery-item__image" src="./img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.webp 1x, ./img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.webp 1x, ./img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-window-mobile@1x.webp 1x, ./img/photo-window-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg 1x, ./img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg 1x, ./img/photo-window-tablet@2x.jpg 2x">
+                    <img class="gallery-item__image" src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
             <p class="gallery-item__user-name">Борис
             <time class="gallery-item__user-time">(20 часов назад)</time></p>
             <p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="gallery-item__like">Нравится</button>
+            <button class="gallery-item__like">Нравится: 215</button>
           </div>
           </li>
           <li class="gallery-item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/photo-fair-tablet@1x.jpg">
-                <img class="gallery-item__image" src="./img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.webp 1x, ./img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.webp 1x, ./img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-fair-mobile@1x.webp 1x, ./img/photo-fair-mobile@2x.webp 2x">
+
+
+                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg 1x, ./img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg 1x, ./img/photo-fair-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
             <p class="gallery-item__user-name">Сергей
             <time class="gallery-item__user-time">(25 часов назад)</time></p>
             <p class="gallery-item__text">Самая кубанская в мире!</p>
-            <button class="gallery-item__like">Нравится</button>
+            <button class="gallery-item__like">Нравится: 4</button>
           </div>
           </li>
           <li class="gallery-item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/photo-pov-tablet@1x.jpg">
-                <img class="gallery-item__image" src="./img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.webp 1x, ./img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.webp 1x, ./img/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-pov-mobile@1x.webp 1x, ./img/photo-pov-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg 1x, ./img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg 1x, ./img/photo-pov-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
             <p class="gallery-item__user-name">Максим
             <time class="gallery-item__user-time">(40 часов назад)</time></p>
             <p class="gallery-item__text">Где снег-то?</p>
-            <button class="gallery-item__like">Нравится</button>
+            <button class="gallery-item__like">Нравится: 150</button>
           </div>
           </li>
           <li class="gallery-item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 600px)" srcset="./img/photo-wing-tablet@1x.jpg">
-                <img class="gallery-item__image" src="./img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Фотография">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.webp 1x, ./img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.webp 1x, ./img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg 1x, ./img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg 1x, ./img/photo-wing-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg" width="280px" height="180px" alt="Фотография">
               </picture>
             </a>
             <div class="gallery-item__bg">
             <p class="gallery-item__user-name">Надежда
             <time class="gallery-item__user-time">(45 часов назад)</time></p>
             <p class="gallery-item__text">Всем GM и взаимные лайки!</p>
-            <button class="gallery-item__like">Нравится</button>
+            <button class="gallery-item__like">Нравится: 2560</button>
           </div>
           </li>
         </ul>
@@ -176,9 +205,13 @@
       <form class="filtes__form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="filters__pictures">
           <picture>
-              <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="./img/photo-road-tablet@1x.jpg">
-              <img class="filter__image" src="./img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Картинка">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.webp 1x, ./img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.webp 1x, ./img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/photo-road-mobile@1x.webp 1x, ./img/photo-road-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg x2">
+              <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg 1x, ./img/photo-road-tablet@2x.jpg 2x">
+              <img class="filter__image" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg" width="280px" height="374px" alt="Картинка">
           </picture>
         </div>
         <div class="tools">
@@ -204,13 +237,13 @@
     <a href="index.html"><img class="footer__logo" src="./img/logo-pink-blue-mobile.svg" alt="Логотип"></a>
     <ul class="footer__list">
       <li class="footer__item">
-        <a class="footer__link" href="#"><img src="./img/icon-twitter.svg" width="18px" height="14px" alt="Твитер"></a>
+        <a class="footer__link-twitter" href="#"></a>
       </li>
       <li class="footer__item">
-          <a class="footer__link" href="#"><img src="./img/icon-facebook.svg" width="9px" height="18px" alt="Фейсбук"></a>
+          <a class="footer__link-facebook" href="#"></a>
       </li>
       <li class="footer__item">
-          <a class="footer__link" href="#"><img src="./img/icon-youtube.svg" width="15px" height="13px" alt="Ютуб"></a>
+          <a class="footer__link-youtube" href="#"></a>
       </li>
     </ul>
     <div class="footer__academy">

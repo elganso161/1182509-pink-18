@@ -35,7 +35,7 @@
   width: 280px;
   margin: 0 auto;
   letter-spacing: 0.02em;
-  margin-bottom: 6px;
+  margin-bottom: 39px;
 
 }
 
@@ -45,7 +45,9 @@
   color: $midnight;
 }
 
-
+.form__span {
+  display: none;
+}
 
 // TABLET min-width: 660px /////////////////////////////////////////////
 
@@ -101,12 +103,22 @@
     flex-direction: column;
   }
 
+  .form__span {
+    display: inline-block;
+  }
+
 
 }// min-width: 660px
 
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
 
 @media (min-width: 1200px) {
+
+  .form {
+    margin-bottom: 50px;
+  }
+
+
   .form__bg {
     background: url("..//img/bg-back-desktop@1x.jpg")center no-repeat;
     background-size: 2560px 853px;
@@ -119,8 +131,9 @@
   }
 
   .form__title {
+    padding-top: 70px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 63px;
     width: 760px;
   }
 

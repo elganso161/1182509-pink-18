@@ -1,5 +1,5 @@
 .price {
-  margin-bottom: 148px;
+  margin-bottom: 99px;
 }
 
 .price__value-desctop {
@@ -13,6 +13,7 @@
 .wrapper {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 44px;
 }
 
 .price__list {
@@ -42,6 +43,28 @@
   span {
     font-size: 24px;
     font-weight: 300;
+  }
+}
+
+.price__value-hit {
+  position: relative;
+  &::before {
+  position: absolute;
+  content: "Хит";
+  top: 13px;
+  left: -28px;
+  z-index: 1;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-46deg);
+  font-size: 14px;
+  font-weight: 300;
+  background: #d22856;
+  background-size: 72px 25px;
+  width: 105px;
+  height: 29px;
+  text-align: center;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(28% 0%, 73% 0%, 100% 100%, 0% 100%);
   }
 }
 
@@ -86,13 +109,57 @@
   }
 }
 
+.price__btn {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.price__btn-slider {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -2px;
+    z-index: 1;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #bec2c7;
+  }
+}
+
+.price__btn-slider.current {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -6px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 3px solid #283645;
+    border-radius: 10px;
+  }
+}
+
 
 // TABLET min-width: 660px/////////////////////////////////////////
 
 @media (min-width: 660px) {
 
   .price {
-    margin-bottom: 115px;
+    margin-bottom: 117px;
   }
 
   .price__value-desctop {
@@ -131,10 +198,11 @@
   }
 
   .price__cell-desctop {
-    display: initial;
+    display: table-cell;
     width: 155px;
     font-size: 14px;
-    padding: 0;
+    text-transform: inherit;
+    padding-left: 16px;
   }
 
 
@@ -166,6 +234,10 @@
     width: 27px;
     height: 26px;
   }
+}
+
+.price__btn {
+  display: none;
 }
 
 
