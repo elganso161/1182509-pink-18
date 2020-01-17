@@ -32,7 +32,7 @@
 .burger {
   width: 30px;
   margin: 0 auto;
-  margin-top: -1px;
+  margin-top: 20px;
   margin-right: -4px;
 
 
@@ -105,6 +105,10 @@
     height: 40px;
   }
 
+  .burger {
+      margin-top: 45px;
+  }
+
 }//min-width: 660px
 
 
@@ -137,6 +141,6 @@
   .page-header__logo-image {
     width: 147px;
     height: 40px;
-  }
+    }
 
 }//min-width: 1200px

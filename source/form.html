@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -21,12 +20,13 @@
         </picture>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+      </button>
         <div class="burger burger__nojs">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
         <span class="burger-line"></span>
       </div>
-      </button>
+
     </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -73,8 +73,8 @@
       </div>
     </section>
     <section class="checkboxes">
-      <p class="checkboxes__title">Ваши безбашенные
-        достижения в путешествии</p>
+      <h3 class="checkboxes__title">Ваши безбашенные
+        достижения в путешествии</h3>
         <fieldset class="checkboxes__fieldset">
         <legend class="checkboxes__legend">Ваши безбашенные достижения в путешествии</legend>
         <div class="checkboxes__flex">
@@ -122,8 +122,8 @@
       </fieldset>
     </section>
     <section class="radio">
-      <p class="radio__title">С каким приложением
-          путешествовали?</p>
+      <h3 class="radio__title">С каким приложением
+          путешествовали?</h3>
       <fieldset class="radio__fieldset">
       <legend class="radio__legend">С каким приложением путешествовали?</legend>
       <div class="radio__list">
@@ -139,6 +139,7 @@
         <input class="visually-hidden radio-costom" type="radio" name="radio" id="windows">
         <label class="radio__text" for="windows">Windows Phone</label>
       </div>
+    </div>
     </fieldset>
     </section>
     <section class="comment">
@@ -147,7 +148,7 @@
       <legend class="comment__legend" >Опишите свои эмоции</legend>
         <div class="comment__block-emotion">
           <label class="comment__text" for="text">Опишите свои эмоции</label>
-          <textarea class="comment__size" type="text" name="text" id="text" cols="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="comment__size" name="text" id="text" cols="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
       </fieldset>
     </section>
@@ -178,7 +179,7 @@
     </ul>
     <div class="footer__academy">
     <p class="footer__text">Разработано</p>
-    <a href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__academy-logo" src="./img/logo-htmlacademy.svg" width="27px" height="34px" alt="Логотип академии"></a>
+    <a href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__academy-logo" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип академии"></a>
   </div>
   </div>
   </footer>

@@ -1,3 +1,9 @@
+.footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 .footer__logo {
   margin-bottom: 34px;
 }
@@ -216,9 +222,28 @@
     margin-top: 0;
   }
 
-  .footer__list {
-    margin-left: 248px;
+  .footer__logo {
+    margin-bottom: 34px;
+    margin-top: -8px;
+    margin-left: 10px;
+
   }
 
+  .footer__list {
+    margin-left: 240px;
+    width: 176px;
+  }
+
+  .footer__academy {
+    margin-right: 10px;
+  }
+
+  .footer__text {
+    letter-spacing: 0.02em;
+  }
+
+  .footer__academy-logo {
+    margin-top: 14px;
+  }
 
 }//min-width: 1200px
