@@ -108,10 +108,18 @@
 
 .logo-apple {
   fill: #fff;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 
 .logo-android {
   margin-top: 5px;
+  margin-right: 4px;
+}
+
+.logo-microsoft {
+  margin-top: 8px;
+  margin-right: 1px;
 }
 
 // TABLE min-width: 660px//////////////////////////////////////////////////////////
@@ -189,7 +197,21 @@
 
   .downloads-icon__list {
     margin-bottom: 30px;
+    width: 225px;
   }
+
+  .logo-apple {
+    margin-left: 18px;
+    margin-right: 13px;
+  }
+
+
+  .logo-android {
+    margin-right: 10px;
+  }
+
+
+
 
 }//*min-width: 660px
 
