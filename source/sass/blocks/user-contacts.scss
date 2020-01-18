@@ -102,7 +102,7 @@
       left: 441px;
       z-index: 1;
       width: 56px;
-      height: 56px;
+      height: 57px;
       background: url("../img/icon-mail.svg") center no-repeat;
       background-size: 20px 19px;
       background-color: #e5e5e5;
@@ -133,7 +133,7 @@
     margin-left: 44px;
   }
 
-.user__flex {
+.user-contacts__flex {
   display: flex;
   margin: 0 auto;
   height: 159px;
@@ -151,12 +151,10 @@
     position: absolute;
     content: "";
     top: -69px;
-    left: 316px;
+    left: 317px;
     z-index: 1;
     width: 56px;
     height: 56px;
-    background: url("../img/icon-phone.svg") center no-repeat;
-    background-size: 20px 19px;
     background-color: #e5e5e5;
   }
 }
@@ -167,12 +165,10 @@
     position: absolute;
     content: "";
     top: -69px;
-    left: 316px;
+    left: 317px;
     z-index: 1;
     width: 56px;
     height: 56px;
-    background: url("../img/icon-mail.svg") center no-repeat;
-    background-size: 20px 19px;
     background-color: #e5e5e5;
   }
 }

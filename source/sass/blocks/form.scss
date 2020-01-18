@@ -45,7 +45,7 @@
   color: $midnight;
 }
 
-.form__span {
+.form__submit-span {
   display: none;
 }
 
@@ -103,7 +103,7 @@
     flex-direction: column;
   }
 
-  .form__span {
+  .form__submit-span {
     display: inline-block;
   }
 

@@ -1,4 +1,4 @@
-.btn__post {
+.filters__btn-post {
   margin: 0 auto;
   margin-bottom: 81px;
   width: 320px;
@@ -33,7 +33,7 @@
 // TABLET min-width:660px /////////////////////////////////////////
 
 @media (min-width: 660px) {
-  .btn__post {
+  .filters__btn-post {
     margin: 0;
     height: 140px;
   }
@@ -65,7 +65,7 @@
     width: 185px;
   }
 
-  .btn__post {
+  .filters__btn-post {
     height: 60px;
     width: 50%;
   }

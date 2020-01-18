@@ -38,7 +38,7 @@
   height: 64px;
 }
 
-.stats__legend {
+.form__submit-legend {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
   letter-spacing: 0.02em;
 }
 
-.stats__legend sup {
+.form__submit-legend sup {
   color: #d22856;
 }
 
@@ -55,12 +55,12 @@
   margin: 0 auto;
 }
 
-.submit__stats {
+.form__submit-stats {
   display: flex;
   flex-direction: column;
 }
 
-.comment__span {
+.form__submit-span {
   display: none;
 }
 
@@ -81,7 +81,7 @@
   }
 
 
-  .submit__stats {
+  .form__submit-stats {
     margin: 0 auto  ;
     width: 620px;
     align-items: center;
@@ -132,7 +132,7 @@
     height: 230px;
   }
 
-  .submit__stats {
+  .form__submit-stats {
     width: 940px;
   }
 

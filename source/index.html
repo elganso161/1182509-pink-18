@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="fonts/opensans.woff2">
+    <link rel="stylesheet" href="fonts/opensansbold.woff2">
+    <link rel="stylesheet" href="fonts/opensanslight.woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -54,23 +57,23 @@
                 иначе!</h2>
       <h3 class="visually-hidden">Загрузка приложения</h3>
       <a class="downloads__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-      <ul class="downloads-icon__list">
+      <ul class="downloads__icon-list">
         <li class="downloads__item">
           <svg class="downloads__icon logo-apple" width="47" height="56">
             <use xlink:href="./img/spritemap.svg#logo-apple"></use>
-          </svg >
+          </svg>
           <!-- <img class="downloads__icon" src="./img/logo-apple.svg" width="47" height="56" alt="ios"> -->
         </li>
         <li class="downloads__item">
           <svg class="downloads__icon logo-android" width="43" height="47">
             <use xlink:href="./img/spritemap.svg#logo-android"></use>
-          </svg >
+          </svg>
           <!-- <img class="downloads__icon" src="./img/logo-android.svg" width="43" height="47" alt="android"> -->
         </li>
         <li class="downloads__item">
           <svg class="downloads__icon logo-microsoft" width="44" height="41">
             <use xlink:href="./img/spritemap.svg#logo-microsoft"></use>
-          </svg >
+          </svg>
           <!-- <img class="downloads__icon" src="./img/logo-microsoft.svg" width="44" height="41" alt="windows"> -->
         </li>
       </ul>
@@ -88,16 +91,16 @@
         </div>
           <div class="container container-flex">
           <ul class="description__list">
-            <li class="description__item item__phone-1">
-              <h3 class="description-item__title">Поднимает настроение</h3>
+            <li class="description__item description__item-phone-1">
+              <h3 class="description__item-title">Поднимает настроение</h3>
               <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="description__item item__phone-2">
-                <h3 class="description-item__title">Меняет мир вокруг</h3>
+            <li class="description__item description__item-phone-2">
+                <h3 class="description__item-title">Меняет мир вокруг</h3>
                 <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="description__item item__phone-3">
-                <h3 class="description-item__title">Заводит новых друзей</h3>
+            <li class="description__item description__item-phone-3">
+                <h3 class="description__item-title">Заводит новых друзей</h3>
                 <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -257,5 +260,10 @@
     </div>
     </footer>
 
+
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
   </body>
 </html>

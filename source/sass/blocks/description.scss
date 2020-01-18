@@ -88,7 +88,7 @@
 }
 
 
-.description-item__title {
+.description__item-title {
   font-size: 18px;
   color: $midnight;
   line-height: 10px;
@@ -175,7 +175,7 @@
     display: flex;
   }
 
-  .description-item__title {
+  .description__item-title {
     padding-top: 3px;
   }
 
@@ -240,7 +240,7 @@
   //   width: 33%;
   // }
 
-  .description-item__title {
+  .description__item-title {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -248,7 +248,7 @@
     margin-bottom: 25px;
   }
 
-  .item__phone-1 {
+  .description__item-phone-1 {
     position: relative;
     &::before {
       position: absolute;
@@ -266,7 +266,7 @@
   }
 }
 
-  .item__phone-2 {
+  .description__item-phone-2 {
     position: relative;
     &::before {
       position: absolute;
@@ -284,7 +284,7 @@
   }
 }
 
-  .item__phone-3 {
+  .description__item-phone-3 {
     position: relative;
     &::before {
       position: absolute;

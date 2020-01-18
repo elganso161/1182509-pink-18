@@ -14,7 +14,7 @@
 }
 
 
-.filtes__form {
+.filters__form {
   margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@
 
 
 @media (min-width: 660px) {
-  .filtes__form {
+  .filters__form {
     background-color: #f2f2f2;
     display: flex;
     width: 660px;
@@ -83,7 +83,7 @@
   }
 
 
-  .filter__range {
+  .filters__range {
     height: 215px;
     padding-left: 92px;
     padding-top: 17px;
@@ -163,7 +163,7 @@
     margin-bottom: 76px;
   }
 
-  .filtes__form {
+  .filters__form {
     width: 940px;
     height: 515px;
   }
@@ -178,7 +178,7 @@
     width: 288px;
 }
 
-.filter__image {
+.filters__image {
   margin-top: 55px;
   margin-left: -10px;
 
@@ -188,7 +188,7 @@
   width: 50%;
 }
 
-.filter__range {
+.filters__range {
   height: 215px;
   padding-left: 90px;
   padding-top: 73px;
