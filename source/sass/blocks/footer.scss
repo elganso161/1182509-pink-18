@@ -45,6 +45,8 @@
   }
 }
 
+
+
 .footer__link-twitter:active::before {
   opacity: 0.3;
 }
@@ -54,6 +56,9 @@
   transition: 0.2s;
 }
 
+.footer__link-twitter:focus {
+  outline: 1px solid blue;
+}
 
 .footer__link-facebook {
   position: relative;
