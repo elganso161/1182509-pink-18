@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="fonts/opensansbold.woff2">
     <link rel="stylesheet" href="fonts/opensanslight.woff2">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <script src="./js/picturefill.min.js" async></script>
   </head>
-  <body>
+  <body class="no-js">
   <header class="page-header">
   <div class="container container-flex">
     <div class="page-header__header page-header__header-tablet">
@@ -225,17 +227,10 @@
           </li>
         </ul>
       </div>
-      </div>
         <div class="contacts__map-block">
           <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af99340d514e8a7db4b5c13e215662de8f85a93619647703aef37e7305dab7d09&amp;source=constructor"></iframe>
-          <!-- <a href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="./img/bg-map-tablet@1x.jpg">
-              <img class="contacts__map" src="./img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
-            </picture>
-          </a> -->
         </div>
+      </div>
     </section>
   </main>
 
@@ -264,7 +259,8 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <script src="/path/to/svg4everybody.js"></script>
+
+    <script src="./js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>
