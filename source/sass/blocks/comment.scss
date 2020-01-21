@@ -1,4 +1,4 @@
-.comment{
+.comment {
   margin-bottom: 45px;
 }
 
@@ -29,12 +29,11 @@
   margin: 0 auto;
   padding: 21px;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   background-color: #2aab6d;
   border: none;
   border-radius: 3px;
   margin-bottom: 30px;
-  width: 280px;
   height: 64px;
 }
 
@@ -65,93 +64,77 @@
 }
 
 // TABLET min-width: 660px /////////////////////////////////////////////
-
 @media (min-width: 660px) {
+  .comment__text {
+    display: none;
+  }
 
-.comment__text {
-  display: none;
-}
+  .comment {
+    order: 5;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    width: 620px;
+    height: 310px;
+  }
 
-.comment {
-  order: 5;
-  margin: 0 auto;
-  margin-bottom: 61px;
-  width: 620px;
-  height: 310px;
-}
-
-
-.form__submit-stats {
-  margin: 0 auto  ;
-  width: 620px;
-  align-items: center;
-  order: 6;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .form__submit-stats {
+    margin: 0 auto;
+    width: 620px;
+    align-items: center;
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .submit-form {
     width: 300px;
     margin: 0;
   }
 
+  .comment__fieldset {
+    border: 2px solid #e5e5e5;
+    font-size: 15px;
+    border-radius: 3px;
+    height: 303px;
+  }
 
+  .comment__block-emotion {
+    width: 500px;
+    margin: 0 auto;
+  }
 
-.comment__fieldset {
-  border: 2px solid #e5e5e5;
-  font-size: 15px;
-  border-radius: 3px;
-  height: 303px;
-}
-
-.comment__block-emotion {
-  width: 500px;
-  margin: 0 auto;
-}
-
-.comment__size {
-  width: 500px;
-  height: 190px;
-  margin-left: -27px;
-  margin-top: 30px;
-  padding-top: 13px;
-}
-
-
-}//min-width: 660px
-
-
-
-
+  .comment__size {
+    width: 500px;
+    height: 190px;
+    margin-left: -27px;
+    margin-top: 30px;
+    padding-top: 13px;
+  }
+} //min-width: 660px
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
-
 @media (min-width: 1200px) {
+  .comment {
+    width: 940px;
+    height: 230px;
+  }
 
-.comment {
-  width: 940px;
-  height: 230px;
-}
+  .form__submit-stats {
+    width: 940px;
+  }
 
-.form__submit-stats {
-  width: 940px;
-}
+  .comment__fieldset {
+    width: 940px;
+    height: 230px;
+  }
 
-.comment__fieldset {
-  width: 940px;
-  height: 230px;
-}
+  .comment__size {
+    width: 816px;
+    height: 129px;
+    margin-top: 25px;
+    margin-left: -160px;
+  }
 
-
-.comment__size {
-  width: 816px;
-  height: 129px;
-  margin-top: 25px;
-  margin-left: -160px;
-}
-
-.comment__span {
-  display: inline;
-}
-
-
-}//min-width: 1200px
+  .comment__span {
+    display: inline;
+  }
+} //min-width: 1200px

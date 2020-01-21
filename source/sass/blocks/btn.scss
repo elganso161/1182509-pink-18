@@ -30,31 +30,36 @@
 
 // TABLET min-width:660px /////////////////////////////////////////
 @media (min-width: 660px) {
-.filters__btn-post {
-  margin: 0;
-  height: 140px;
-}
-.btn {
-  width: 257px;
-}
-.btn__post-submit {
-  margin-left: 19px;
-  margin-bottom: 27px;
-}
-.btn__post-reset {
-  margin-left: 19px;
-}
+  .filters__btn-post {
+    margin: 0;
+    height: 140px;
+  }
+
+  .btn {
+    width: 257px;
+  }
+
+  .btn__post-submit {
+    margin-left: 19px;
+    margin-bottom: 27px;
+  }
+
+  .btn__post-reset {
+    margin-left: 19px;
+  }
 } //min-width: 660px
 // DESCTOP min-width:1200px /////////////////////////////////////////
 @media (min-width: 1200px) {
-.btn {
-  width: 185px;
-}
-.filters__btn-post {
-  height: 60px;
-  width: 50%;
-}
-.btn__post-submit {
-  margin-left: -66px;
-}
+  .btn {
+    width: 185px;
+  }
+
+  .filters__btn-post {
+    height: 60px;
+    width: 50%;
+  }
+
+  .btn__post-submit {
+    margin-left: -66px;
+  }
 } //min-width: 1200px

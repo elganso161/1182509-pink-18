@@ -21,7 +21,7 @@
 
 .fill {
   border: none;
-  background: url("..//img/icon-editor-fill.svg")center no-repeat;
+  background: url("..//img/icon-editor-fill.svg") center no-repeat;
   width: 48px;
   height: 43px;
   cursor: pointer;
@@ -29,20 +29,16 @@
 
 .contrast {
   border: none;
-  background: url("..//img/icon-editor-contrast.svg")center no-repeat;
+  background: url("..//img/icon-editor-contrast.svg") center no-repeat;
   padding-right: 43px;
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
 
-
 // TABLET min-width: 660px////////////////////////////////
-
 @media (min-width: 660px) {
-
-.tools {
-  display: none;
-}
-
-}//min-width: 660px
+  .tools {
+    display: none;
+  }
+} //min-width: 660px
