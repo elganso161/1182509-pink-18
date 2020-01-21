@@ -79,7 +79,7 @@ input[type="radio"]:checked+.radio__text::after {
 
 
 .visually-hidden:focus+.radio__text {
-	outline: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 // TABLET min-width: 660px /////////////////////////////////////////////

@@ -2,19 +2,17 @@
   margin: 0 auto;
   margin-bottom: 81px;
   width: 320px;
-
 }
 
 .btn {
-	width: 280px;
+  width: 280px;
   font-size: 18px;
   margin: 0 auto;
   padding: 15px;
   cursor: pointer;
-
-	border: 2px solid #cecece;
-	background: #F6F6f6;
-	border-radius: 30px;
+  border: 2px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 30px;
 }
 
 .btn__post-submit {
@@ -24,56 +22,39 @@
   background-color: inherit;
 }
 
-
 .btn__post-reset {
   background-color: inherit;
   border-color: #dddfe0;
   color: rgba(40, 54, 69, 0.1);
 }
 
-
 // TABLET min-width:660px /////////////////////////////////////////
-
 @media (min-width: 660px) {
-  .filters__btn-post {
-    margin: 0;
-    height: 140px;
-  }
-
-  .btn {
-    width: 257px;
-  }
-
-  .btn__post-submit {
-    margin-left: 19px;
-    margin-bottom: 27px;
-  }
-
-
-  .btn__post-reset {
-    margin-left: 19px;
-  }
-
-
-}//min-width: 660px
-
-
-
+.filters__btn-post {
+  margin: 0;
+  height: 140px;
+}
+.btn {
+  width: 257px;
+}
+.btn__post-submit {
+  margin-left: 19px;
+  margin-bottom: 27px;
+}
+.btn__post-reset {
+  margin-left: 19px;
+}
+} //min-width: 660px
 // DESCTOP min-width:1200px /////////////////////////////////////////
-
 @media (min-width: 1200px) {
-
-  .btn {
-    width: 185px;
-  }
-
-  .filters__btn-post {
-    height: 60px;
-    width: 50%;
-  }
-
-  .btn__post-submit {
-    margin-left: -66px;
-  }
-
-}//min-width: 1200px
+.btn {
+  width: 185px;
+}
+.filters__btn-post {
+  height: 60px;
+  width: 50%;
+}
+.btn__post-submit {
+  margin-left: -66px;
+}
+} //min-width: 1200px
