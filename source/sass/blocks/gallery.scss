@@ -189,6 +189,7 @@
     margin: 0 auto;
     margin-bottom: 93px;
     display: flex;
+
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 100% auto;
@@ -327,51 +328,52 @@
     }
   }
 
-.gallery__sub-title {
-  width: 585px;
-  margin-bottom: 87px;
-}
-
-.gallery__list {
-  width: 100%;
-}
-
-.gallery__item-image-first {
-  width: 1200px;
-  height: 506;
-}
-
-.gallery-item__image {
-  width: 300px;
-  height: 400px;
-}
-
-.gallery__item-bg-first {
-  width: 940px;
-  height: 96px;
-}
-
-.gallery__item-text-first {
-  height: 20px;
-  letter-spacing: 0.02em;
-}
-
-.gallery__item-first {
-  margin-bottom: 48px;
-}
-
-.gallery-item {
-  margin-bottom: 53px;
-  margin: 0 auto;
-}
-
-.gallery__item-like-first {
-  padding-left: 106px;
-  margin-top: 8px;
-  position: relative;
-  &::before {
-    top: 5px;
-    left: 245px;
+  .gallery__sub-title {
+    width: 585px;
+    margin-bottom: 87px;
   }
-}
+
+  .gallery__list {
+    width: 100%;
+  }
+
+  .gallery__item-image-first {
+    width: 1200px;
+    height: 506;
+  }
+
+  .gallery-item__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .gallery__item-bg-first {
+    width: 940px;
+    height: 96px;
+  }
+
+  .gallery__item-text-first {
+    height: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .gallery__item-first {
+    margin-bottom: 48px;
+  }
+
+  .gallery-item {
+    margin: 0 auto;
+    margin-bottom: 53px;
+  }
+
+  .gallery__item-like-first {
+    padding-left: 106px;
+    margin-top: 8px;
+    position: relative;
+
+    &::before {
+      top: 5px;
+      left: 245px;
+    }
+  }
 } //min-width: 1200px
