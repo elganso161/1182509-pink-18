@@ -27,9 +27,10 @@
 
 .gallery__sub-title {
   font-size: 14px;
+  font-weight: 500;
   line-height: 30px;
   color: $midnight;
-  width: 270px;
+  width: 253px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -146,7 +147,7 @@
 }
 
 .gallery__item-image-first {
-  width: 320px;
+  width: 100%;
   height: 137px;
   display: block;
   margin: 0 auto;
@@ -159,7 +160,7 @@
   text-align: left;
   padding-top: 18px;
   padding-left: 19px;
-  padding-right: 41px;
+  padding-right: 26px;
   // padding-bottom: 25px;
 }
 
@@ -168,7 +169,7 @@
   text-align: left;
   padding-top: 10px;
   padding-left: 18px;
-  padding-right: 20px;
+  padding-right: 10px;
   padding-bottom: 25px;
   margin: 0 auto;
   margin-bottom: 0;
@@ -236,7 +237,7 @@
   }
 
   .gallery__item-image-first {
-    width: 700px;
+    width: 100%;
     height: 509px;
   }
 
@@ -338,7 +339,7 @@
   }
 
   .gallery__item-image-first {
-    width: 1200px;
+    width: 100%;
     height: 506;
   }
 

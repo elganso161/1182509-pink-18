@@ -2,7 +2,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 37px;
 }
 
 .full-name__name {
@@ -16,7 +16,7 @@
 .full-name__size {
   margin-top: 7px;
   width: 280px;
-  height: 59px;
+  height: 62px;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
   outline: none;
@@ -33,12 +33,16 @@
 
 .full-name__size[placeholder] {
   padding-left: 20px;
-  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 30px;
+  color: $midnight;
 }
+
+
 
 .full-name__field {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 // TABLET min-width: 660px///////////////////////////////////
@@ -46,7 +50,7 @@
   .full-name {
     width: 620px;
     order: 1;
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 
   .full-name__field {
@@ -60,20 +64,23 @@
     flex-grow: 1;
     width: auto;
     padding: 0;
-    padding-top: 22px;
+    padding-top: 17px;
   }
 
   .full-name__size {
-    flex-grow: 2;
+    margin-top: 0;
     width: 482px;
+    flex-grow: 4;
   }
+
 } //min-width: 660px
 //DESCTOP min-width: 1200px///////////////////////////////////
 @media (min-width: 1200px) {
   .full-name {
     width: 470px;
     margin: 0 auto;
-    margin-top: 13px;
+    margin-top: 16px;
+    margin-left: 9px;
   }
 
   .full-name__name {
@@ -81,6 +88,6 @@
   }
 
   .full-name__size {
-    margin-right: 38px;
+    margin-right: 34px;
   }
 } //min-width: 1200px

@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: 605px;
   background-color: #f2f2f2;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 
 .checkboxes__title {
@@ -25,14 +25,13 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 53px;
 }
 
 .checkboxes__text {
   font-size: 18px;
   color: $midnight;
   line-height: 30px;
-  letter-spacing: 0.02em;
   margin-left: 70px;
   cursor: pointer;
   position: relative;
@@ -83,6 +82,12 @@ fieldset {
   font-size: 0;
 }
 
+.checkboxes__legend {
+  color: $cerise;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 // TABLET min-width: 660px /////////////////////////////////////////////
 @media (min-width: 660px) {
   .checkboxes__title {
@@ -106,7 +111,6 @@ fieldset {
 
   .checkboxes__legend {
     font-size: 14px;
-    letter-spacing: 0.02em;
   }
 
   .checkboxes-block {
@@ -170,6 +174,8 @@ fieldset {
 
   .checkboxes__fieldset {
     height: 243px;
+    width: 940px;
+    margin-left: 0;
   }
 
   .checkboxes-block {

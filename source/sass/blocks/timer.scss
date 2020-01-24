@@ -2,6 +2,10 @@
   display: none;
 }
 
+.timer__text-br {
+  display: none;
+}
+
 // TABLET min-width: 660px/////////////////////////////////////////////
 @media (min-width: 660px) {
   .timer {
@@ -67,7 +71,7 @@
     line-height: 24px;
     color: $midnight;
     margin: 0;
-    width: 295px;
+    width: 296px;
     margin-bottom: 12px;
   }
 
@@ -75,7 +79,10 @@
     font-size: 14px;
     line-height: 24px;
     color: $cerise;
-    letter-spacing: 0.016em;
+  }
+
+  .timer__text-br {
+    display: none;
   }
 } //min-width: 660px
 // DESCTOP min-width: 1200px/////////////////////////////////////////////
@@ -136,13 +143,16 @@
   .timer__text {
     font-size: 18px;
     line-height: 30px;
-    width: 500px;
-    letter-spacing: 0.03em;
+    width: 570px;
     margin-bottom: 35px;
   }
 
   .timer__br {
     display: none;
+  }
+
+  .timer__text-br {
+    display: inline-block;
   }
 
   .timer__title {
@@ -153,6 +163,5 @@
 
   .timer__link {
     font-size: 18px;
-    letter-spacing: 0.02em;
   }
 } //min-width: 1200px

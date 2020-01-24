@@ -80,7 +80,6 @@
 
 .price__cell {
   font-size: 14px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: $midnight;
   width: 150px;
@@ -196,13 +195,13 @@
   }
 
   .price__value {
-    // width: 155px;
     height: 79px;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     width: 50px;
 
     span {
+      display: block;
       font-size: 18px;
     }
   }
@@ -281,10 +280,19 @@
 } //min-width: 660px
 // DESCTOP min-width: 1200px/////////////////////////////////////////
 @media (min-width: 1200px) {
+  .price {
+    margin-bottom: 113px;
+  }
+
   .price__list {
     width: 940px;
     margin: 0 auto;
     margin-bottom: 47px;
+  }
+
+  .price__cell-desctop {
+    font-size: 18px;
+    padding-left: 20px;
   }
 
   .price__value {
@@ -359,5 +367,14 @@
       width: 27px;
       height: 26px;
     }
+  }
+
+  .price__value {
+    font-size: 18px;
+  }
+
+  .price__value span {
+    display: block;
+    font-size: 24px;
   }
 } //min-width: 1200px

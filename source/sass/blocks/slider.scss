@@ -1,0 +1,162 @@
+.slider {
+  width: 240px;
+  height: 2px;
+  border-radius: 5px;
+  background: #283645;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 73px;
+}
+
+.slider__toogle {
+  appearance: none;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-left: 50px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.slider-crop {
+  display: none;
+}
+
+.slider-fill {
+  display: none;
+}
+
+.slider-contrast {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .slider {
+    width: 202px;
+  }
+
+  .slider-all {
+    display: none;
+  }
+
+  .slider-crop {
+    display: block;
+    margin-bottom: 71px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -52px;
+      z-index: 1;
+      background: url("../img/icon-editor-crop.svg");
+      background-size: 22px 22px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .slider-fill {
+    display: block;
+    margin-bottom: 69px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -7px;
+      left: -52px;
+      z-index: 1;
+      background: url("../img/icon-editor-fill.svg");
+      background-size: 24px 22px;
+      width: 24px;
+      height: 22px;
+    }
+  }
+
+  .slider-contrast {
+    display: block;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -9px;
+      left: -47px;
+      z-index: 1;
+      background: url("../img/icon-editor-contrast.svg");
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider-crop {
+    display: block;
+    margin-bottom: 71px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -22px;
+      left: -92px;
+      z-index: 1;
+      background: url("../img/icon-editor-crop.svg");
+      background-size: 44px 44px;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  .slider-fill {
+    display: block;
+    margin-bottom: 69px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -17px;
+      left: -92px;
+      z-index: 1;
+      background: url("../img/icon-editor-fill.svg");
+      background-size: 48px 43px;
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  .slider-contrast {
+    display: block;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -16px;
+      left: -86px;
+      z-index: 1;
+      background: url("../img/icon-editor-contrast.svg");
+      background-size: 32px 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
