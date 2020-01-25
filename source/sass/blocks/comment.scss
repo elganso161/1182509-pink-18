@@ -62,6 +62,7 @@
   color: $cerise;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 
 .comment__size[placeholder] {
@@ -121,7 +122,7 @@
   }
 } //min-width: 660px
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .comment {
     width: 940px;
     height: 230px;

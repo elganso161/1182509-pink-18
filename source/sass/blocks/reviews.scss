@@ -78,6 +78,14 @@
   }
 }
 
+.reviews__btn-next {
+  display: noen;
+}
+
+.reviews__btn-previous {
+  display: none;
+}
+
 // TABLET min-width: 660px///////////////////////////////////////////////
 @media (min-width: 660px) {
   .reviews {
@@ -118,7 +126,7 @@
   }
 } // min-width: 660px
 // DESCTOP min-width: 1200px///////////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .reviews {
     margin-bottom: 150px;
   }
@@ -149,5 +157,57 @@
 
   .reviews__item {
     margin-left: 130px;
+  }
+
+  .reviews__btn-slider.current {
+    display: none;
+  }
+
+  .reviews__btn-slider {
+    display: none;
+  }
+
+  .reviews__btn-right {
+    display: block;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -199px;
+      left: 476px;
+      z-index: 5;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      width: 21px;
+      height: 41px;
+      cursor: pointer;
+    }
+  }
+
+  .reviews__btn-left {
+    display: block;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -199px;
+      left: -480px;
+      z-index: 5;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      width: 21px;
+      height: 41px;
+      cursor: pointer;
+    }
   }
 } // min-width: 1200px

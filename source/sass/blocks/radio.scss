@@ -82,6 +82,7 @@ input[type="radio"]:checked + .radio__text::after {
   color: $cerise;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 
 // TABLET min-width: 660px /////////////////////////////////////////////
@@ -154,7 +155,7 @@ input[type="radio"]:checked + .radio__text::after {
   }
 } //min-width: 660px
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .radio {
     width: 435px;
   }

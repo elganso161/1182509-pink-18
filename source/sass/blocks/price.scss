@@ -169,7 +169,7 @@
 // TABLET min-width: 660px/////////////////////////////////////////
 @media (min-width: 660px) {
   .price {
-    margin-bottom: 117px;
+    margin-bottom: 114px;
   }
 
   .price__value-desctop {
@@ -279,7 +279,7 @@
   }
 } //min-width: 660px
 // DESCTOP min-width: 1200px/////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .price {
     margin-bottom: 113px;
   }
@@ -376,5 +376,10 @@
   .price__value span {
     display: block;
     font-size: 24px;
+  }
+
+  .price__value-desctop-first {
+    display: block;
+    visibility: hidden;
   }
 } //min-width: 1200px

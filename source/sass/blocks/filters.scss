@@ -119,38 +119,44 @@
 }
 // TABLET min-width: 660px //////////////////////////////////////////
 @media (min-width: 660px) {
+  .filters {
+    margin-bottom: 27px;
+  }
+
   .filters__form {
     background-color: #f2f2f2;
     display: flex;
     width: 660px;
-    height: 420px;
+    height: 512px;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
-  .filter__image {
+  .filters__image {
     width: 300px;
     height: 400px;
     margin-left: 12px;
+    margin-top: 58px;
+
   }
 
   .filters__text {
     font-size: 18px;
     width: 445px;
-    margin-bottom: 125px;
+    margin-bottom: 67px;
   }
 
   .filters__range {
     height: 215px;
-    padding-left: 92px;
-    padding-top: 17px;
-    margin-bottom: 50px;
+    padding-left: 55px;
+    padding-top: 77px;
+    margin-bottom: 109px;
   }
 } //min-width: 660px
 // DESCTOP min-width: 1200px //////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .filters {
-    margin-bottom: 76px;
+    margin-bottom: 88px;
   }
 
   .filters__form {
@@ -164,9 +170,7 @@
     width: 440px;
   }
 
-  .slider {
-    width: 288px;
-  }
+
 
   .filters__image {
     margin-top: 55px;
@@ -179,7 +183,7 @@
 
   .filters__range {
     height: 215px;
-    padding-left: 90px;
+    padding-left: 0;
     padding-top: 73px;
     margin-bottom: 186px;
     width: 50%;

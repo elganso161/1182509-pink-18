@@ -11,19 +11,19 @@
     <script src="./js/picturefill.min.js" async></script>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header__index">
       <div class="container container-flex">
-        <div class="page-header__header page-header__header-tablet">
+        <div class="page-header__header page-header__header-index">
           <a class="page-header__logo">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
               <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+              <img class="page-header__logo-image page-header__logo-image-index" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
             </picture>
           </a>
           <button class="page-header__toggle" type="button" aria-label="Открыть меню">
           </button>
-          <div class="burger burger__nojs">
+          <div class="burger burger__index burger__nojs">
             <span class="burger-line"></span>
             <span class="burger-line"></span>
             <span class="burger-line"></span>
@@ -60,22 +60,25 @@
             <a class="downloads__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="downloads__icon-list">
               <li class="downloads__item">
-                <svg class="downloads__icon logo-apple" width="47" height="56">
-                  <use xlink:href="./img/spritemap.svg#logo-apple"></use>
-                </svg>
-                <!-- <img class="downloads__icon" src="./img/logo-apple.svg" width="47" height="56" alt="ios"> -->
+                <a class="downloads__icon-link" href="https://www.apple.com/itunes/working-itunes/market/">
+                  <svg class="downloads__icon logo-apple" width="47" height="56">
+                    <use xlink:href="./img/spritemap.svg#logo-apple"></use>
+                  </svg>
+                </a>
               </li>
               <li class="downloads__item">
-                <svg class="downloads__icon logo-android" width="43" height="47">
-                  <use xlink:href="./img/spritemap.svg#logo-android"></use>
-                </svg>
-                <!-- <img class="downloads__icon" src="./img/logo-android.svg" width="43" height="47" alt="android"> -->
+                <a class="downloads__icon-link" href="http://androidmarkets.ru/">
+                  <svg class="downloads__icon logo-android" width="43" height="47">
+                    <use xlink:href="./img/spritemap.svg#logo-android"></use>
+                  </svg>
+                </a>
               </li>
               <li class="downloads__item">
-                <svg class="downloads__icon logo-microsoft" width="44" height="41">
-                  <use xlink:href="./img/spritemap.svg#logo-microsoft"></use>
-                </svg>
-                <!-- <img class="downloads__icon" src="./img/logo-microsoft.svg" width="44" height="41" alt="windows"> -->
+                <a class="downloads__icon-link" href="http://www.microsoftstore.com/store/msru/ru_RU/home">
+                  <svg class="downloads__icon logo-microsoft" width="44" height="41">
+                    <use xlink:href="./img/spritemap.svg#logo-microsoft"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
             <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -107,6 +110,7 @@
         </div>
       </section>
       <section class="timer">
+        <div class="timer__block">
         <div class="timer__left">
           <p class="timer__numb">24</p>
         </div>
@@ -117,6 +121,7 @@
           </p>
           <a class="timer__link" href="#">Узнать больше об исследовании</a>
         </div>
+      </div>
       </section>
       <section class="reviews">
         <div class="container">
@@ -137,9 +142,11 @@
             </li>
           </ul>
           <div class="reviews__btn">
-            <button class="reviews__btn-slider current"></button>
-            <button class="reviews__btn-slider"></button>
-            <button class="reviews__btn-slider"></button>
+            <button type="button" class="reviews__btn-slider current"></button>
+            <button type="button" class="reviews__btn-slider"></button>
+            <button type="button" class="reviews__btn-slider"></button>
+            <button type="button" class="reviews__btn-right"></button>
+            <button type="button" class="reviews__btn-left"></button>
           </div>
         </div>
       </section>
@@ -149,7 +156,7 @@
           <table class="price__list">
             <tbody>
               <tr class="price__item">
-                <th class="price__value price__value-desctop"></th>
+                <th class="price__value price__value-desctop price__value-desctop-first"></th>
                 <th class="price__value">База<span>1,99 USD</span></th>
                 <th class="price__value price__value-hit">Стандарт <span>3,99 USD</span></th>
                 <th class="price__value">Анлим <span>9,99 USD</span></th>
@@ -208,23 +215,31 @@
               <li class="contacts__item">
                 <b class="contacts__title">Звоните:</b>
                 <a class="contacts__link" href="#">
-                  <p class="contacts__text">+7 (812) 555-66-66</p>
+                  <p class="contacts__text-phone">+7 (812) 555-66-66</p>
                 </a>
               </li>
               <li class="contacts__item">
                 <b class="contacts__title">Пишите:</b>
                 <a class="contacts__link" href="#">
-                  <p class="contacts__text">mail@htmlacademy.ru</p>
+                  <p class="contacts__text-mail">mail@htmlacademy.ru</p>
                 </a>
               </li>
               <li class="contacts__item">
                 <b class="contacts__title">Приезжайте в гости:</b>
-                <p class="contacts__text">ул. Большая Конюшенная, 19/8
+                <p class="contacts__text-address">ул. Большая Конюшенная, 19/8
                 </p>
               </li>
             </ul>
           </div>
           <div class="contacts__map-block">
+            <picture class="contacts__map-nojs">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.webp 1x, ./img/bg-map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.webp 1x, ./img/bg-map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/bg-map-mobile@1x.webp 1x, ./img/bg-map-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg 1x, ./img/bg-map-tablet@2x.jpg 2x">
+                <img src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.png" width="320" height="212" alt="Фотография">
+            </picture>
             <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af99340d514e8a7db4b5c13e215662de8f85a93619647703aef37e7305dab7d09&amp;source=constructor"></iframe>
           </div>
         </div>

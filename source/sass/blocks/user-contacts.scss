@@ -48,6 +48,7 @@
   color: $cerise;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 
 // TABLET min-width: 660px /////////////////////////////////////////////
@@ -127,7 +128,7 @@
   }
 } //min-width: 660px
 // DESCTOP min-width: 1200px /////////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .user-contacts {
     width: 940px;
     height: 200px;

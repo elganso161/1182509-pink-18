@@ -30,6 +30,10 @@
 // TABLE min-width: 660px////////////////////////////////////////////////////////
 @media (min-width: 660px) {
   .page-header {
+    height: 346px;
+  }
+
+  .page-header__index {
     height: 365px;
   }
 
@@ -37,8 +41,12 @@
     height: 106px;
   }
 
-  .page-header__header-tablet {
+  .page-header__header-index {
     height: 110px;
+  }
+
+  .page-header__header-tablet {
+    height: 91px;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -46,13 +54,17 @@
   }
 
   .page-header__logo-image {
-    margin-top: 27px;
+    margin-top: 9px;
     width: 147px;
     height: 40px;
   }
+
+  .page-header__logo-image-index {
+    margin-top: 25px;
+  }
 } //min-width: 660px
 // DESCTOP min-width: 1200px////////////////////////////////////////////////////////
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-header {
     position: absolute;
     z-index: 1;
@@ -77,5 +89,6 @@
   .page-header__logo-image {
     width: 147px;
     height: 40px;
+    margin-top: 26px;
   }
 } //min-width: 1200px

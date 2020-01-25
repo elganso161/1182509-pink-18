@@ -106,10 +106,15 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .slider {
+    width: 288px;
+  }
+  
   .slider-crop {
     display: block;
     margin-bottom: 71px;
+    width: 285px;
     position: relative;
 
     &::before {
@@ -128,6 +133,7 @@
   .slider-fill {
     display: block;
     margin-bottom: 69px;
+    width: 285px;
     position: relative;
 
     &::before {
@@ -145,6 +151,7 @@
 
   .slider-contrast {
     display: block;
+    width: 285px;
     position: relative;
 
     &::before {
