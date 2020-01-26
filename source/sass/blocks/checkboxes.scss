@@ -77,8 +77,6 @@ input:checked + .checkboxes__text::after {
   outline: 1px solid blue;
 }
 
-
-
 .checkboxes__legend {
   color: $cerise;
   text-transform: uppercase;

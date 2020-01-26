@@ -3,7 +3,7 @@
   position: relative;
   height: 471px;
 
-  &::before{
+  &::before {
     position: absolute;
     content: "";
     top: -90px;
@@ -190,7 +190,7 @@
     height: 377px;
     position: relative;
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       top: -90px;
@@ -318,7 +318,7 @@
     margin-bottom: 113px;
     position: relative;
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       top: -147px;
@@ -342,11 +342,6 @@
   .price__cell-desctop {
     font-size: 18px;
     padding-left: 20px;
-  }
-
-  .price__value {
-    width: 236px;
-    height: 100px;
   }
 
   .price__value-hit {
@@ -425,6 +420,8 @@
   .price__value span {
     display: block;
     font-size: 24px;
+    width: 236px;
+    height: 100px;
   }
 
   .price__value-desctop-first {
