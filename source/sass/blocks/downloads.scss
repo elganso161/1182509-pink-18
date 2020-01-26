@@ -81,6 +81,8 @@
 }
 
 .downloads__icon-list {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   text-align: center;

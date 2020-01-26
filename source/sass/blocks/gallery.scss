@@ -1,6 +1,6 @@
 .gallery {
   text-align: center;
-  margin-bottom: 61px;
+  margin-bottom: 40px;
 }
 
 .gallery__bg {
@@ -41,12 +41,29 @@
 
 .gallery__list-first {
   padding: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    top: 0;
+    left: 160px;
+    z-index: 5;
+    background-color: #d22856;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 139px;
+    height: 34px;
+    padding-top: 4px;
+  }
 }
 
 .gallery-item {
   list-style: none;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .gallery-item-first {
@@ -161,7 +178,7 @@
   padding-top: 18px;
   padding-left: 19px;
   padding-right: 26px;
-  // padding-bottom: 25px;
+  padding-bottom: 21px;
 }
 
 .gallery__item-bg-first {
@@ -220,6 +237,29 @@
     margin: 0 auto;
     margin-bottom: 51px;
   }
+
+  .gallery__list-first {
+    padding: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      top: 57px;
+      left: 500px;
+      z-index: 5;
+      background-color: #d22856;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      width: 139px;
+      height: 36px;
+      padding-top: 4px;
+    }
+  }
+
+
 
   .gallery-item {
     margin-bottom: 20px;
@@ -337,6 +377,29 @@
   .gallery__list {
     width: 100%;
   }
+
+  .gallery__list-first {
+    padding: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      top: 55px;
+      left: 930px;
+      z-index: 5;
+      background-color: #d22856;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      width: 139px;
+      height: 36px;
+      padding-top: 4px;
+    }
+  }
+
+
 
   .gallery__item-image-first {
     width: 100%;

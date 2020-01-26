@@ -232,14 +232,16 @@
             </ul>
           </div>
           <div class="contacts__map-block">
-            <picture class="contacts__map-nojs">
+            <a class="contacts__map-link" href="#">
+            <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.webp 1x, ./img/bg-map-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.webp 1x, ./img/bg-map-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="./img/bg-map-mobile@1x.webp 1x, ./img/bg-map-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg 1x, ./img/bg-map-tablet@2x.jpg 2x">
-                <img src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.png" width="320" height="212" alt="Фотография">
+                <img class="contacts__map-nojs" src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.png" width="320" height="212" alt="Фотография">
             </picture>
+          </a>
             <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af99340d514e8a7db4b5c13e215662de8f85a93619647703aef37e7305dab7d09&amp;source=constructor"></iframe>
           </div>
         </div>

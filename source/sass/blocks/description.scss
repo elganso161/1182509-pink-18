@@ -5,17 +5,6 @@
   margin-bottom: 2px;
   overflow: hidden;
 
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   top: 255px;
-  //   left: 0;
-  //   z-index: -1;
-  //   background-color: #f2f2f2;
-  //   width: 100%;
-  //   height: 700px;
-  // }
-
   &::before {
     position: absolute;
     content: "";
@@ -116,17 +105,6 @@
     height: 665px;
     position: relative;
 
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   top: 240px;
-    //   left: 0;
-    //   z-index: -1;
-    //   background-color: #f2f2f2;
-    //   width: 100%;
-    //   height: 425px;
-    // }
-
     &::after {
       position: absolute;
       content: "";
@@ -203,17 +181,6 @@
   .description {
     height: 850px;
     position: relative;
-
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   top: 335px;
-    //   left: 0;
-    //   z-index: -1;
-    //   background-color: #f2f2f2;
-    //   width: 100%;
-    //   height: 500px;
-    // }
 
     &::after {
       position: absolute;

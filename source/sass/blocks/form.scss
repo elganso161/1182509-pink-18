@@ -41,6 +41,38 @@
   display: none;
 }
 
+.form__submit-legend {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $midnight;
+}
+
+.form__submit-legend sup {
+  color: #d22856;
+}
+
+.form__submit-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-form {
+  width: 280px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 21px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  height: 64px;
+}
+
 // TABLET min-width: 660px /////////////////////////////////////////////
 @media (min-width: 660px) {
   .form {
@@ -90,6 +122,20 @@
     display: none;
   }
 
+  .form__submit-stats {
+    margin: 0 auto;
+    width: 620px;
+    align-items: center;
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .submit-form {
+    width: 300px;
+    margin: 0;
+  }
+
 } // min-width: 660px
 // DESCTOP min-width: 1200px ///////////////////////////
 @media (min-width: 960px) {
@@ -130,5 +176,9 @@
 
   .form__submit-span {
     display: inline-block;
+  }
+
+  .form__submit-stats {
+    width: 940px;
   }
 } // min-width: 1200px

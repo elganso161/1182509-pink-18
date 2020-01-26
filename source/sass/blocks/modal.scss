@@ -1,4 +1,5 @@
 .modal__sent {
+  display: none;
   position: absolute;
   top: 1920px;
   z-index: 5;
@@ -54,6 +55,7 @@
 }
 
 .modal__failure {
+  display: none;
   position: absolute;
   top: 1460px;
   z-index: 5;
@@ -172,7 +174,7 @@
   }
 
   .modal__sent-title {
-    width: 400px;
+    width: 425px;
   }
 
   .modal__sent-text {

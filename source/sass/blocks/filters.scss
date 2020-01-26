@@ -117,6 +117,12 @@
 .filters__pictures {
   margin-bottom: 40px;
 }
+
+.filters__btn-post {
+  margin: 0 auto;
+  margin-bottom: 81px;
+  width: 320px;
+}
 // TABLET min-width: 660px //////////////////////////////////////////
 @media (min-width: 660px) {
   .filters {
@@ -169,8 +175,6 @@
     margin-bottom: 67px;
     width: 440px;
   }
-
-
 
   .filters__image {
     margin-top: 55px;
