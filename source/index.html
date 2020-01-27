@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
-    <link rel="preload" href="fonts/opensans.woff2">
-    <link rel="preload" href="fonts/opensansbold.woff2">
-    <link rel="preload" href="fonts/opensanslight.woff2">
-    <link rel="preload" href="css/style.min.css">
-    <script src="./js/picturefill.min.js" async></script>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header page-header__index">
-      <div class="container container-flex">
+      <div class="container container--flex">
         <div class="page-header__header page-header__header-index">
           <a class="page-header__logo">
             <picture>
@@ -21,13 +20,7 @@
               <img class="page-header__logo-image page-header__logo-image-index" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
             </picture>
           </a>
-          <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-          </button>
-          <div class="burger burger__index burger__nojs">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-          </div>
+          <button class="burger burger--nojs" type="button" aria-label="Открыть меню"></button>
         </div>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
@@ -61,21 +54,21 @@
             <ul class="downloads__icon-list">
               <li class="downloads__item">
                 <a class="downloads__icon-link" href="https://www.apple.com/itunes/working-itunes/market/">
-                  <svg class="downloads__icon logo-apple" width="47" height="56">
+                  <svg class="downloads__icon downloads__icon--apple" width="47" height="56">
                     <use xlink:href="./img/spritemap.svg#logo-apple"></use>
                   </svg>
                 </a>
               </li>
               <li class="downloads__item">
                 <a class="downloads__icon-link" href="http://androidmarkets.ru/">
-                  <svg class="downloads__icon logo-android" width="43" height="47">
+                  <svg class="downloads__icon downloads__icon--android" width="43" height="47">
                     <use xlink:href="./img/spritemap.svg#logo-android"></use>
                   </svg>
                 </a>
               </li>
               <li class="downloads__item">
                 <a class="downloads__icon-link" href="http://www.microsoftstore.com/store/msru/ru_RU/home">
-                  <svg class="downloads__icon logo-microsoft" width="44" height="41">
+                  <svg class="downloads__icon downloads__icon--microsoft" width="44" height="41">
                     <use xlink:href="./img/spritemap.svg#logo-microsoft"></use>
                   </svg>
                 </a>
@@ -92,7 +85,7 @@
           <p class="description__sub-title">Нам есть, что вам предложить!
           </p>
         </div>
-        <div class="container container-flex">
+        <div class="container container--flex">
           <ul class="description__list">
             <li class="description__item description__item-phone-1">
               <h3 class="description__item-title">Поднимает настроение</h3>
@@ -152,7 +145,7 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Цены</h2>
-        <div class="wrapper">
+        <div class="price__wrapper">
           <table class="price__list">
             <tbody>
               <tr class="price__item">
@@ -212,19 +205,19 @@
           <p class="contacts__text-title">Остались вопросы? Свяжитесь с нами!</p>
           <div class="container">
             <ul class="contacts__list">
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--phone">
                 <b class="contacts__title">Звоните:</b>
                 <a class="contacts__link" href="#">
                   <p class="contacts__text-phone">+7 (812) 555-66-66</p>
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--mail">
                 <b class="contacts__title">Пишите:</b>
                 <a class="contacts__link" href="#">
                   <p class="contacts__text-mail">mail@htmlacademy.ru</p>
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--address">
                 <b class="contacts__title">Приезжайте в гости:</b>
                 <p class="contacts__text-address">ул. Большая Конюшенная, 19/8
                 </p>
@@ -248,7 +241,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container-footer">
+      <div class="container container--footer">
         <a href="index.html"><img class="main-footer__logo" src="./img/logo-pink-blue-mobile.svg" alt="Логотип"></a>
         <ul class="main-footer__list">
           <li class="main-footer__item">
@@ -267,6 +260,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/picturefill.min.js"></script>
     <script src="./js/svg4everybody.min.js"></script>
     <script>
       svg4everybody();

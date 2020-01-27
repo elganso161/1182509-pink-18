@@ -1,5 +1,5 @@
 @media (min-width: 660px) {
-  .container-footer {
+  .container--footer {
     margin: 0 auto;
     width: 660px;
     display: flex;
@@ -14,7 +14,7 @@
     width: 960px;
   }
 
-  .container-flex {
+  .container--flex {
     margin: 0 auto;
     width: 960px;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
   }
 
-  .container-footer {
+  .container--footer {
     margin: 0 auto;
     width: 960px;
     display: flex;

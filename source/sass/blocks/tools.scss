@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 208px;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
 .tools__crop {
@@ -36,9 +36,22 @@
   cursor: pointer;
 }
 
+.tools__fill,
+.tools__contrast {
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
 // TABLET min-width: 660px////////////////////////////////
 @media (min-width: 660px) {
   .tools {
     display: none;
+  }
+
+  .tools__crop,
+  .tools__fill,
+  .tools__contrast {
+    filter: none;
+    opacity: 1;
   }
 } //min-width: 660px

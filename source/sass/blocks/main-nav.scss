@@ -64,14 +64,15 @@
     justify-content: space-between;
     min-width: 630px;
     flex-wrap: wrap;
+    padding-right: 9px;
   }
 
   .main-nav__item {
     border: none;
-    padding-left: 6px;
+    padding-left: 0;
   }
 
   .main-nav {
-    width: 630px;
+    width: 633px;
   }
 } //*min-width: 1200px

@@ -70,9 +70,17 @@
     width: 482px;
     flex-grow: 4;
   }
+
+  .full-name__size--margin {
+    margin-left: 7px;
+  }
 } //min-width: 660px
 //DESCTOP min-width: 1200px///////////////////////////////////
 @media (min-width: 960px) {
+  .full-name__size--margin {
+    margin-left: 0;
+  }
+
   .full-name {
     width: 470px;
     margin: 0 auto;

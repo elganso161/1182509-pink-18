@@ -115,18 +115,23 @@
 }
 
 .filters__pictures {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .filters__btn-post {
   margin: 0 auto;
-  margin-bottom: 81px;
+  margin-bottom: 77px;
   width: 320px;
 }
 // TABLET min-width: 660px //////////////////////////////////////////
 @media (min-width: 660px) {
   .filters {
     margin-bottom: 27px;
+  }
+
+  .filters__btn-post {
+    margin: 0;
+    height: 140px;
   }
 
   .filters__form {
@@ -164,15 +169,21 @@
     margin-bottom: 88px;
   }
 
+  .filters__btn-post {
+    height: 60px;
+    width: 50%;
+  }
+
   .filters__form {
     width: 940px;
     height: 515px;
   }
 
   .filters__text {
-    margin-top: -43px;
+    margin-top: -38px;
     margin-bottom: 67px;
     width: 440px;
+    letter-spacing: normal;
   }
 
   .filters__image {

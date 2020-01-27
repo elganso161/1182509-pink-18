@@ -18,7 +18,7 @@
   background: #ffffff;
   cursor: pointer;
   margin-top: -5px;
-  margin-left: 50px;
+  margin-left: 191px;
 }
 
 .slider::-webkit-slider-thumb {
@@ -31,15 +31,15 @@
   cursor: pointer;
 }
 
-.slider-crop {
+.slider--crop {
   display: none;
 }
 
-.slider-fill {
+.slider--fill {
   display: none;
 }
 
-.slider-contrast {
+.slider--contrast {
   display: none;
 }
 
@@ -48,11 +48,15 @@
     width: 202px;
   }
 
-  .slider-all {
+  .slider__toogle {
+    margin-left: 147px;
+  }
+
+  .slider--all {
     display: none;
   }
 
-  .slider-crop {
+  .slider--crop {
     display: block;
     margin-bottom: 71px;
     position: relative;
@@ -70,10 +74,14 @@
     }
   }
 
-  .slider-fill {
+  .slider--fill {
     display: block;
     margin-bottom: 69px;
     position: relative;
+
+    .slider__toogle {
+      margin-left: 24px;
+    }
 
     &::before {
       position: absolute;
@@ -88,9 +96,13 @@
     }
   }
 
-  .slider-contrast {
+  .slider--contrast {
     display: block;
     position: relative;
+
+    .slider__toogle {
+      margin-left: 95px;
+    }
 
     &::before {
       position: absolute;
@@ -111,7 +123,11 @@
     width: 288px;
   }
 
-  .slider-crop {
+  .slider__toogle {
+    margin-left: 70px;
+  }
+
+  .slider--crop {
     display: block;
     margin-bottom: 71px;
     width: 285px;
@@ -130,11 +146,15 @@
     }
   }
 
-  .slider-fill {
+  .slider--fill {
     display: block;
     margin-bottom: 69px;
     width: 285px;
     position: relative;
+
+    .slider__toogle {
+      margin-left: 248px;
+    }
 
     &::before {
       position: absolute;
@@ -149,10 +169,14 @@
     }
   }
 
-  .slider-contrast {
+  .slider--contrast {
     display: block;
     width: 285px;
     position: relative;
+
+    .slider__toogle {
+      margin-left: 160px;
+    }
 
     &::before {
       position: absolute;

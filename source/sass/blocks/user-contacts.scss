@@ -1,5 +1,5 @@
 .user-contacts {
-  margin: 0 auto;
+  margin: -4px auto 0;
   margin-bottom: 20px;
   width: 280px;
 }
@@ -33,10 +33,12 @@
 
 .user-contacts__size[placeholder] {
   padding-left: 20px;
-  padding-top: 6px;
+  padding-top: 2px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: $midnight;
+  letter-spacing: 0;
 }
 
 .user-block {
@@ -159,6 +161,7 @@
     width: 940px;
     height: 174px;
     margin-left: 0;
+    margin-top: 4px;
   }
 
   .user-contacts__text-phone {
