@@ -1,5 +1,4 @@
 .price {
-  margin-bottom: 99px;
   position: relative;
   height: 471px;
 
@@ -415,13 +414,13 @@
 
   .price__value {
     font-size: 18px;
+    height: 100px;
   }
 
   .price__value span {
     display: block;
     font-size: 24px;
     width: 236px;
-    height: 100px;
   }
 
   .price__value-desctop-first {

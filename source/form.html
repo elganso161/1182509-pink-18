@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="fonts/opensans.woff2">
-    <link rel="stylesheet" href="fonts/opensansbold.woff2">
-    <link rel="stylesheet" href="fonts/opensanslight.woff2">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2">
+    <link rel="preload" href="fonts/opensanslight.woff2">
+    <link rel="preload" href="css/style.min.css">
     <script src="./js/picturefill.min.js" async></script>
   </head>
   <body>
@@ -62,11 +62,11 @@
             <h2 class="visually-hidden">Ф.И.О.</h2>
             <div class="full-name__field">
               <label class="full-name__name" for="surname">Фамилия:</label>
-              <input class="full-name__size" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+              <input class="full-name__size" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
             </div>
             <div class="full-name__field">
               <label class="full-name__name" for="name">Имя:</label>
-              <input class="full-name__size" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+              <input class="full-name__size" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
             </div>
             <div class="full-name__field">
               <label class="full-name__name" for="patronymic">Отчество:</label>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="user-block">
                   <label class="user-contacts__text user-contacts__text-mail" for="mail">Адрес почты:</label>
-                  <input class="user-contacts__size" type="email" name="mail" id="mail" placeholder="Введите почту *">
+                  <input class="user-contacts__size" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
                 </div>
               </div>
             </fieldset>

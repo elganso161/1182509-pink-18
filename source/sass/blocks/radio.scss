@@ -83,6 +83,12 @@ input[type="radio"]:checked + .radio__text::after {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
+  padding: 0 30px;
+}
+
+.radio__fieldset {
+  border: none;
+  font-size: 0;
 }
 
 // TABLET min-width: 660px /////////////////////////////////////////////

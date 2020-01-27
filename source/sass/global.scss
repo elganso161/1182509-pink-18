@@ -14,20 +14,3 @@ html {
 *::after {
   box-sizing: border-box;
 }
-
-fieldset {
-  border: none;
-  font-size: 0;
-}
-// TABLE min-width: 660px//////////////////////////////////////////////////////////
-@media (min-width: 660px) {
-  body {
-    min-width: 660px;
-  }
-} // min-width: 660px
-// DESCTOP min-width: 1200px///////////////////////////////////////////////////////
-@media (min-width: 960px) {
-  body {
-    min-width: 960px;
-  }
-} // min-width: 1200px

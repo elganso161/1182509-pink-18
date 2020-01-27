@@ -31,14 +31,22 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .comment__size[placeholder] {
+  font-family: "Open Sans";
   padding-left: 20px;
   padding-top: 15px;
   font-size: 18px;
+  font-weight: 500;
   line-height: 30px;
   color: $midnight;
+}
+
+.comment__fieldset {
+  border: none;
+  font-size: 0;
 }
 // TABLET min-width: 660px /////////////////////////////////////////////
 @media (min-width: 660px) {
