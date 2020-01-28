@@ -308,6 +308,15 @@
     color: $cerise;
     width: 260px;
     margin: 18px 0 0 0;
+    opacity: 1;
+
+    &:hover {
+      color: #283645;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .contacts__text-address {
