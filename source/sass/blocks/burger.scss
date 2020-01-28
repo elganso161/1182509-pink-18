@@ -15,8 +15,13 @@
 .burger--nojs {
   display: none;
 }
-
 @media (min-width: 660px) {
+  .burger {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 960px) {
   .burger {
     display: none;
   }

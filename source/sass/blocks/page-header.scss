@@ -30,11 +30,11 @@
 // TABLE min-width: 660px////////////////////////////////////////////////////////
 @media (min-width: 660px) {
   .page-header {
-    height: 346px;
+    height: 366px;
   }
 
   .page-header__index {
-    height: 365px;
+    height: 366px;
   }
 
   .page-header__header {
@@ -46,7 +46,7 @@
   }
 
   .page-header__header-tablet {
-    height: 91px;
+    height: 111px;
     display: flex;
     justify-content: space-between;
     padding: 18px 20px;
@@ -54,7 +54,7 @@
   }
 
   .page-header__logo-image {
-    margin-top: -8px;
+    margin-top: 8px;
     width: 147px;
     height: 40px;
   }
