@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: 605px;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .checkboxes__title {
@@ -25,7 +25,7 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 53px;
+  margin-bottom: 54px;
 }
 
 .checkboxes__text {
@@ -89,6 +89,15 @@
   border: none;
   font-size: 0;
   margin-top: -6px;
+}
+
+.checkboxes-block:nth-child(1) {
+  margin-top: -3px;
+}
+
+.checkboxes-block:nth-child(3) {
+  margin-top: -5px;
+  margin-bottom: 49px;
 }
 // TABLET min-width: 660px /////////////////////////////////////////////
 @media (min-width: 660px) {
