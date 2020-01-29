@@ -88,6 +88,7 @@
   .comment {
     width: 940px;
     height: 230px;
+    margin-top: -3px;
   }
 
   .comment__fieldset {
@@ -105,4 +106,4 @@
     margin-top: 25px;
     margin-left: -10px;
   }
-}
+}// min-width: 960px

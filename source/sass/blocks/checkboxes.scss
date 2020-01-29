@@ -157,7 +157,7 @@
     cursor: pointer;
   }
 } //min-width: 660px
-// DESCTOP min-width: 1200px /////////////////////////////////////////////
+// DESCTOP min-width: 960px /////////////////////////////////////////////
 @media (min-width: 960px) {
   .checkboxes {
     width: 940px;
@@ -189,9 +189,16 @@
 
   .checkboxes-block:nth-child(1) {
     margin-right: 47px;
+    margin-top: -3px;
+    margin-bottom: 5px;
+  }
+
+  .checkboxes-block:nth-child(2) {
+    margin-top: -4px;
   }
 
   .checkboxes-block:nth-child(3) {
     margin-right: 26px;
+    margin-top: -3px;
   }
 } //min-width: 1200px
