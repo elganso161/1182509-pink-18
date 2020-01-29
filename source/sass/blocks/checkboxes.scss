@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: 605px;
   background-color: #f2f2f2;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .checkboxes__title {
@@ -25,7 +25,7 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .checkboxes__text {
@@ -89,10 +89,6 @@
   border: none;
   font-size: 0;
   margin-top: -6px;
-}
-
-.checkboxes-block:nth-child(3) {
-  margin-top: -5px;
 }
 // TABLET min-width: 660px /////////////////////////////////////////////
 @media (min-width: 660px) {
@@ -159,6 +155,10 @@
     background: url("../img/icon-yes-checkbox.svg") center no-repeat;
     cursor: pointer;
   }
+
+  .checkboxes-block:nth-child(1) {
+    margin-top: 39px;
+  }
 } //min-width: 660px
 // DESCTOP min-width: 960px /////////////////////////////////////////////
 @media (min-width: 960px) {
@@ -203,5 +203,6 @@
   .checkboxes-block:nth-child(3) {
     margin-right: 26px;
     margin-top: -3px;
+    margin-bottom: 1px;
   }
 } //min-width: 1200px
